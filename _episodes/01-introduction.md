@@ -1,19 +1,15 @@
 ---
-title: "Getting started with Google Colab"
+title: "Introduction"
 teaching: 15
 exercises: 0
 questions:
 - "Key question (FIXME)"
 objectives:
-- "Learning about Google Colab"
+- "Learning objective (FIXME)"
 keypoints:
-- "Get familiar with Google Colab."
+- "Keypoints (FIXME)"
 ---
-Since you will be working in Google Colab, we recommend that you read this introduction before moving on in ths course:  
-[https://colab.research.google.com/](https://colab.research.google.com/)
-
-If you want to read in English, go here instead:  
-[https://colab.research.google.com/?hl=en](https://colab.research.google.com/?hl=en)
+Before moving on, make sure you visited the [Setup page](../setup.md).
 
 
 {% include links.md %}
