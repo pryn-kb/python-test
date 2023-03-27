@@ -275,7 +275,8 @@ Capitalise This Sentence Again Please.
 > > ## Solution
 > > A2) Importing `digits` from `string` provides the `digits` methods<br />
 > > B3) Importing `string` provides methods such as `ascii_uppercase`, but
-> >     requires the `string.` syntax.\
+> >     requires the `string.` syntax.
+> >
 > > C1) Importing `string` with the alias `s` allows `s.digits`
 > {: .solution}
 {: .challenge}
