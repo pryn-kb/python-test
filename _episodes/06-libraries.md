@@ -273,9 +273,9 @@ Capitalise This Sentence Again Please.
 > {: .python}
 > >
 > > ## Solution
-> > A2) Importing `digits` from `string` provides the `digits` methods
-> > B3) Importing `string` provides methods such as `ascii_uppercase`, but
-> >     requires the `string.` syntax.
+> > A2) Importing `digits` from `string` provides the `digits` methods\
+> > B3) Importing `string` provides methods such as `ascii_uppercase`, but 
+> >     requires the `string.` syntax.\
 > > C1) Importing `string` with the alias `s` allows `s.digits`
 > {: .solution}
 {: .challenge}
@@ -302,7 +302,7 @@ Capitalise This Sentence Again Please.
 > > ~~~
 > > {: .python}
 > >
-> > Most likely you find this version easier to read since it's less dense.
+> > Most likely you find this version easier to read since it's less dense.  
 > > The main reason not to use this form of import is to avoid name clashes.
 > > For instance, you wouldn't import `degrees` this way if you also wanted to
 > > use the name `degrees` for a variable or function of your own. Or if you
