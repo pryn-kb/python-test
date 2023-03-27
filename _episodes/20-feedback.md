@@ -1,7 +1,7 @@
 ---
-title: "Feedback"
+title: "UD! - Feedback"
 teaching: 0
-exercises: 15
+exercises: 0
 questions:
 - "How did the class go?"
 objectives:

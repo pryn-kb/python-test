@@ -263,7 +263,6 @@ result of print is None
 > > ~~~
 > > tin
 > > 4
-> > TypeError: '>' not supported between instances of 'str' and 'int'
 > > ~~~
 >{: .solution}
 {: .challenge}

@@ -1,8 +1,8 @@
 ---
 layout: break
-title: "Afternoon Coffee"
+title: "UD! - Afternoon Coffee"
 teaching: 0
 exercises: 0
-break: 15
+break: 0
 ---
 FIXME: describe what to reflect on.
