@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "Keypoints (FIXME)"
 ---
-Before moving on, make sure you visited the [Setup page](/setup.html).
+Before moving on, make sure you visited the [Setup page](setup.html).
 
 
 {% include links.md %}
