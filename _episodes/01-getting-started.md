@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Getting Started ..."
 teaching: 15
 exercises: 0
 questions:
