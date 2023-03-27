@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-teaching: 15
+title: "UD! - Getting Started"
+teaching: 0
 exercises: 0
 questions:
 - "How do I use the Spyder IDE?"
