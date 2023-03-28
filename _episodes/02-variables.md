@@ -59,7 +59,7 @@ Ahmed
 
 ## Use `print` to display values.
 
-You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with `\\n` characters (which means “new line”), while `print` will display the text appropriately formatted with new lines.
+You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with `\n` characters (which means “new line”), while `print` will display the text appropriately formatted with new lines.
 
 *   Python has a built-in function called `print` that prints things as text.
 *   Call the function (i.e., tell Python to run it) by using its name.
