@@ -21,6 +21,12 @@ keypoints:
 ---
 ## Use variables to store values.
 
+Variables are one of the fundamental building blocks of Python. A variable is like a tiny container where you store values and data, such as filenames, words, numbers, collections of words and numbers, and more.
+
+The variable name will point to a value that you “assign” it. You might think about variable assignment like putting a value “into” the variable, as if the variable is a little box 🎁
+
+You assign variables with an equals = sign. In Python, a single equals sign = is the “assignment operator.” (A double equals sign == is the “real” equals sign.)
+
 *   Variables are names for values.
 *   In Python the `=` symbol assigns the value on the right to the name on the left.
 *   The variable is created when a value is assigned to it.
