@@ -39,10 +39,15 @@ first_name = 'Ahmed'
 ~~~
 {: .python}
 
-*   Variable names:
-    *   cannot start with a digit
-    *   cannot contain spaces, quotation marks, or other punctuation
-    *   *may* contain an underscore (typically used to separate words in long variable names)
+## Variable names
+
+Variable names can be as long or as short as you want, but there are certain rules you must follow.
+
+Variables:
+
+*   cannot start with a digit
+*   cannot contain spaces, quotation marks, or other punctuation
+*   *may* contain an underscore (typically used to separate words in long variable names)
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
@@ -57,6 +62,22 @@ Ahmed
 ~~~
 {: .output}
 
+## Striving for Good Variable Names
+
+As you start to code, you will almost certainly be tempted to use extremely short variables names like `f`. Your fingers will get tired. Your coffee will wear off. You will see other people using variables like `f`. You’ll promise yourself that you’ll definitely remember what `f` means. But you probably won’t.
+
+So, resist the temptation of bad variable names! Clear and precisely-named variables will:
+
+*   make your code more readable (both to yourself and others)
+*   reinforce your understanding of Python and what’s happening in the code
+*   clarify and strengthen your thinking
+
+## Off-Limits Names
+
+The only variable names that are off-limits are names that are reserved by, or built into, the Python programming language itself — such as `print`, `True`, and `list`.
+
+This is not something to worry too much about. You’ll know very quickly if a name is reserved by Python because it will show up in green and often give you an error message.
+
 ## Use `print` to display values.
 
 You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with `\n` characters (which means “new line”), while `print` will display the text appropriately formatted with new lines.
@@ -64,8 +85,8 @@ You can run the `print` function inside the Jupyter environment, too. This is so
 *   Python has a built-in function called `print` that prints things as text.
 *   Call the function (i.e., tell Python to run it) by using its name.
 *   Provide values to the function (i.e., the things to print) in parentheses.
-*   To add a string to the printout, wrap the string in single quotations.
-*   The values passed to the function are called 'arguments'
+*   To add a string to the printout, wrap the string in single or double quotations.
+*   The values passed to the function are called 'arguments'.
 
 ~~~
 print(first_name, 'is', age, 'years old')
