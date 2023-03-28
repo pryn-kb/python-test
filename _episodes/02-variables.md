@@ -51,7 +51,43 @@ Variables:
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
-We can check to see what’s “inside” these variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
+## Python is case-sensitive.
+
+*   Python thinks that upper- and lower-case letters are different,
+    so `Name` and `name` are different variables.
+*   There are conventions for using upper-case letters at the start of variable names
+    so we will use lower-case letters for now.
+
+## Use meaningful variable names.
+
+Python doesn't care what you call variables as long as they obey the rules (alphanumeric characters and the underscore).\
+As you start to code, you will almost certainly be tempted to use extremely short variables names like `f`. Your fingers will get tired. Your coffee will wear off. You will see other people using variables like `f`. You’ll promise yourself that you’ll definitely remember what `f` means. But you probably won’t.
+
+So, resist the temptation of bad variable names! Clear and precisely-named variables will:
+
+*   make your code more readable (both to yourself and others)
+*   reinforce your understanding of Python and what’s happening in the code
+*   clarify and strengthen your thinking
+
+~~~
+flabadab = 42
+ewr_422_yY = 'Ahmed'
+print(ewr_422_yY, 'is', flabadab, 'years old')
+~~~
+{: .python}
+
+*   Use meaningful variable names to help other people understand what the program does.
+*   The most important "other person" is your future self.
+
+## Off-Limits Names
+
+The only variable names that are off-limits are names that are reserved by, or built into, the Python programming language itself — such as `print`, `True`, and `list`.
+
+This is not something to worry too much about. You’ll know very quickly if a name is reserved by Python because it will show up in green and often give you an error message.
+
+## Use `print` to display values.
+
+We can check to see what’s “inside” variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
 
 ~~~
 first_name
@@ -61,24 +97,6 @@ first_name
 Ahmed
 ~~~
 {: .output}
-
-## Striving for Good Variable Names
-
-As you start to code, you will almost certainly be tempted to use extremely short variables names like `f`. Your fingers will get tired. Your coffee will wear off. You will see other people using variables like `f`. You’ll promise yourself that you’ll definitely remember what `f` means. But you probably won’t.
-
-So, resist the temptation of bad variable names! Clear and precisely-named variables will:
-
-*   make your code more readable (both to yourself and others)
-*   reinforce your understanding of Python and what’s happening in the code
-*   clarify and strengthen your thinking
-
-## Off-Limits Names
-
-The only variable names that are off-limits are names that are reserved by, or built into, the Python programming language itself — such as `print`, `True`, and `list`.
-
-This is not something to worry too much about. You’ll know very quickly if a name is reserved by Python because it will show up in green and often give you an error message.
-
-## Use `print` to display values.
 
 You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with `\n` characters (which means “new line”), while `print` will display the text appropriately formatted with new lines.
 
@@ -206,28 +224,6 @@ print(len('helium'))
 
 *   Nested functions are evaluated from the inside out,
     just like in mathematics.
-
-## Python is case-sensitive.
-
-*   Python thinks that upper- and lower-case letters are different,
-    so `Name` and `name` are different variables.
-*   There are conventions for using upper-case letters at the start of variable names
-    so we will use lower-case letters for now.
-
-## Use meaningful variable names.
-
-*   Python doesn't care what you call variables as long as they obey the rules
-    (alphanumeric characters and the underscore).
-
-~~~
-flabadab = 42
-ewr_422_yY = 'Ahmed'
-print(ewr_422_yY, 'is', flabadab, 'years old')
-~~~
-{: .python}
-
-*   Use meaningful variable names to help other people understand what the program does.
-*   The most important "other person" is your future self.
 
 > ## Swapping Values
 >
