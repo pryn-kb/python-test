@@ -46,7 +46,19 @@ first_name = 'Ahmed'
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
+We can check to see what’s “inside” these variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
+
+first_name
+~~~
+{: .python}
+~~~
+Ahmed
+~~~
+{: .output}
+
 ## Use `print` to display values.
+
+You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with \n characters (which means “new line”), while print() will display the text appropriately formatted with new lines.
 
 *   Python has a built-in function called `print` that prints things as text.
 *   Call the function (i.e., tell Python to run it) by using its name.
