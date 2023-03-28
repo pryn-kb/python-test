@@ -51,13 +51,6 @@ Variables:
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
-### Python is case-sensitive.
-
-*   Python thinks that upper- and lower-case letters are different,
-    so `Name` and `name` are different variables.
-*   There are conventions for using upper-case letters at the start of variable names
-    so we will use lower-case letters for now.
-
 ### Use meaningful variable names.
 
 Python doesn't care what you call variables as long as they obey the rules (alphanumeric characters and the underscore).\
@@ -78,6 +71,13 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 
 *   Use meaningful variable names to help other people understand what the program does.
 *   The most important "other person" is your future self.
+
+### Python is case-sensitive.
+
+*   Python thinks that upper- and lower-case letters are different,
+    so `Name` and `name` are different variables.
+*   There are conventions for using upper-case letters at the start of variable names
+    so we will use lower-case letters for now.
 
 ### Off-Limits Names
 
