@@ -48,6 +48,7 @@ first_name = 'Ahmed'
 
 We can check to see what’s “inside” these variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
 
+~~~
 first_name
 ~~~
 {: .python}
