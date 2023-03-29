@@ -255,8 +255,6 @@ float
 
 You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
-&nbsp;  
-
 <table class="colwidths-auto table" style="border:1px solid black">
 <thead>
 <tr class="row-odd">
