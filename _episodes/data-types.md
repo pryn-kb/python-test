@@ -143,7 +143,7 @@ Here are a few examples:
 
 Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
 
-In Python, strings are ordered sequences of character data, and thus can be indexed in this way. Individual characters in a string can be accessed by specifying the string name followed by a number in square brackets ([]). 
+In Python, strings are ordered sequences of character data, and thus can be indexed in this way. Individual characters in a string can be accessed by specifying the string name followed by a number in square brackets `[]`. 
 
 String indexing in Python is zero-based: the first character in the string has index 0, the next has index 1, and so on. The index of the last character will be the length of the string minus one.
 
@@ -169,7 +169,8 @@ The individual characters can be accessed by index:
 
 ### Slice
 
-Python  allows a form of indexing syntax that extracts substrings from a string, known as string slicing. If `s` is a string, an expression of the form `s[m:n]` returns the portion of `s` starting with position `m`, and up to but not including position `n`:
+Python  allows a form of indexing syntax that extracts substrings from a string, known as string slicing.\
+If `s` is a string, an expression of the form `s[m:n]` returns the portion of `s` starting with position `m`, and up to but not including position `n`:
 
 ~~~
 'I am a string'[0:8]
@@ -225,7 +226,12 @@ Beyonce burst out of the building and sang:
 
 ## Integers & Floats
 
-An **integer** and a **float** (short for **floating point number**) are two Python data types for representing numbers. Integers represent whole numbers. Floats represent numbers with decimal points. They do not need to be placed in quotation marks.
+An **integer** and a **float** (short for **floating point number**) are two Python data types for representing numbers.
+
+*   Integers represent whole numbers.
+*   Floats represent numbers with decimal points.
+
+Integers and floats do not need to be placed in quotation marks.
 
 ~~~
 type(42)
@@ -245,9 +251,10 @@ float
 ~~~
 {: .output}
 
+
 You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
-<table class="colwidths-auto table">
+<table class="colwidths-auto table" style="border:1px solid black">
 <thead>
 <tr class="row-odd">
 <th class="head"><p>Operation</p></th>
