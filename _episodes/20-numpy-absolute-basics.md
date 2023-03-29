@@ -1294,38 +1294,36 @@ Then you can obtain a lot of useful information (first details about `a`
 itself, followed by the docstring of `ndarray` of which `a` is an
 instance):
 
-``` ipython
-In [1]: a?
-Type:            ndarray
-String form:     [1 2 3 4 5 6]
-Length:          6
-File:            ~/anaconda3/lib/python3.9/site-packages/numpy/__init__.py
-Docstring:       <no docstring>
-Class docstring:
-ndarray(shape, dtype=float, buffer=None, offset=0,
-        strides=None, order=None)
+    In [1]: a?
+    Type:            ndarray
+    String form:     [1 2 3 4 5 6]
+    Length:          6
+    File:            ~/anaconda3/lib/python3.9/site-packages/numpy/__init__.py
+    Docstring:       <no docstring>
+    Class docstring:
+    ndarray(shape, dtype=float, buffer=None, offset=0,
+            strides=None, order=None)
 
-An array object represents a multidimensional, homogeneous array
-of fixed-size items.  An associated data-type object describes the
-format of each element in the array (its byte-order, how many bytes it
-occupies in memory, whether it is an integer, a floating point number,
-or something else, etc.)
+    An array object represents a multidimensional, homogeneous array
+    of fixed-size items.  An associated data-type object describes the
+    format of each element in the array (its byte-order, how many bytes it
+    occupies in memory, whether it is an integer, a floating point number,
+    or something else, etc.)
 
-Arrays should be constructed using `array`, `zeros` or `empty` (refer
-to the See Also section below).  The parameters given here refer to
-a low-level method (`ndarray(...)`) for instantiating an array.
+    Arrays should be constructed using `array`, `zeros` or `empty` (refer
+    to the See Also section below).  The parameters given here refer to
+    a low-level method (`ndarray(...)`) for instantiating an array.
 
-For more information, refer to the `numpy` module and examine the
-methods and attributes of an array.
+    For more information, refer to the `numpy` module and examine the
+    methods and attributes of an array.
 
-Parameters
-----------
-(for the __new__ method; see Notes below)
+    Parameters
+    ----------
+    (for the __new__ method; see Notes below)
 
-shape : tuple of ints
-        Shape of created array.
-...
-```
+    shape : tuple of ints
+            Shape of created array.
+    ...
 
 This also works for functions and other objects that **you** create.
 Just remember to include a docstring with your function using a string
@@ -1339,13 +1337,11 @@ For example, if you create this function:
 
 You can obtain information about the function:
 
-``` ipython
-In [2]: double?
-Signature: double(a)
-Docstring: Return a * 2
-File:      ~/Desktop/<ipython-input-23-b5adf20be596>
-Type:      function
-```
+    In [2]: double?
+    Signature: double(a)
+    Docstring: Return a * 2
+    File:      ~/Desktop/<ipython-input-23-b5adf20be596>
+    Type:      function
 
 You can reach another level of information by reading the source code of
 the object you\'re interested in. Using a double question mark (`??`)
@@ -1353,36 +1349,30 @@ allows you to access the source code.
 
 For example:
 
-``` ipython
-In [3]: double??
-Signature: double(a)
-Source:
-def double(a):
-    '''Return a * 2'''
-    return a * 2
-File:      ~/Desktop/<ipython-input-23-b5adf20be596>
-Type:      function
-```
+    In [3]: double??
+    Signature: double(a)
+    Source:
+    def double(a):
+        '''Return a * 2'''
+        return a * 2
+    File:      ~/Desktop/<ipython-input-23-b5adf20be596>
+    Type:      function
 
 If the object in question is compiled in a language other than Python,
 using `??` will return the same information as `?`. You\'ll find this
 with a lot of built-in objects and types, for example:
 
-``` ipython
-In [4]: len?
-Signature: len(obj, /)
-Docstring: Return the number of items in a container.
-Type:      builtin_function_or_method
-```
+    In [4]: len?
+    Signature: len(obj, /)
+    Docstring: Return the number of items in a container.
+    Type:      builtin_function_or_method
 
 and :
 
-``` ipython
-In [5]: len??
-Signature: len(obj, /)
-Docstring: Return the number of items in a container.
-Type:      builtin_function_or_method
-```
+    In [5]: len??
+    Signature: len(obj, /)
+    Docstring: Return the number of items in a container.
+    Type:      builtin_function_or_method
 
 have the same output because they were compiled in a programming
 language other than Python.
@@ -1485,13 +1475,6 @@ With [savetxt](https://numpy.org/devdocs/reference/generated/numpy.savetxt.html#
 Learn more about [input and output routines here](https://numpy.org/devdocs/reference/routines.io.html#routines-io).
 
 ## Importing and exporting a CSV
-
-> \>\>\> with open(\'music.csv\', \'w\') as fid: \... n =
-> fid.write(\'Artist,Genre,Listeners,Playsn\') \... n =
-> fid.write(\'Billie Holiday,Jazz,1300000,27000000n\') \... n =
-> fid.write(\'Jimmie Hendrix,Rock,2700000,70000000n\') \... n =
-> fid.write(\'Miles Davis,Jazz,1500000,48000000n\') \... n =
-> fid.write(\'SIA,Pop,2000000,74000000n\')
 
 It\'s simple to read in a CSV that contains existing information. The
 best and easiest way to do this is to use
