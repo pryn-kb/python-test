@@ -251,10 +251,11 @@ float
 ~~~
 {: .output}
 
-\
+<p></p>
+
 You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
-\
+<p></p>
 
 <table class="colwidths-auto table" style="border:1px solid black">
 <thead>
@@ -379,4 +380,4 @@ False
 *   A double equals sign `==` is used as the equals operator
 *   A single equals sign `=` is used for variable assignment (We will learn more about this in the lesson about variables)
 
-\
+<p></p>
