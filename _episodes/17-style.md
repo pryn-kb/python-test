@@ -14,7 +14,7 @@ keypoints:
 - "Follow standard Python style in your code."
 - "Use docstrings to provide online help."
 ---
-## Follow standard Python style in your code.
+## Follow standard Python style in your code
 
 *   [PEP8](https://www.python.org/dev/peps/pep-0008):
     a style guide for Python that discusses topics such as how you should name variables,
@@ -26,7 +26,7 @@ keypoints:
     The [PEP8 application and Python library](https://pypi.org/project/pep8/)
     can check your code for compliance with PEP8.
 
-## Use assertions to check for internal errors.
+## Use assertions to check for internal errors
 
 Assertions are powerful method for making sure that the context in which your code is executing is as you expect.
 
@@ -40,7 +40,7 @@ def calc_bulk_density(mass, volume):
 
 If the assertion is `False`, the Python interpreter raises an `AssertionError` runtime exception. The source code for the expression that failed will be displayed as part of the error message. To ignore assertions in your code run the interpreter with the '-O' (optimize) switch. Assertions should contain only basic checks and never change the state of the program. For example, an assertion should never contain an assignment.
 
-## Use docstrings to provide online help.
+## Use docstrings to provide online help
 
 *   If the first thing in a function is a character string
     that is not assigned to a variable,

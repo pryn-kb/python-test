@@ -19,7 +19,9 @@ keypoints:
 - "Can mix integers and floats freely in operations."
 - "Variables only change value when something is assigned to them."
 ---
-## Every value has a type.
+## Recap from lesson about Data Types
+
+### Every value has a type
 
 *   Every value in a program has a specific type.
 *   Integer (`int`): whole numbers like 3 or -512.
@@ -29,9 +31,9 @@ keypoints:
     *   Written in either single quotes or double quotes (as long as they match).
     *   The quotation marks aren't printed using `print()`, but may appear when viewing a value in the Jupyter Notebook or other Python interpreter.
 
-## Use the built-in function `type` to find the type of a value.
+### Use the built-in function `type` to find the type of a value
 
-*   Use the built-in function `type` to find out what type a value has.
+We can use the built-in function `type` to find out what type a value has.
 *   This works on variables as well.
     *   But remember: the *value* has the type --- the *variable* is just a label.
     *   When you change the value of a variable to a new data type, the results of `print(type(your_variable))` will change accordingly.
@@ -55,7 +57,7 @@ print(type(title))
 ~~~
 {: .output}
 
-## Types control what operations (or methods) can be performed on a given value.
+## Types control what operations (or methods) can be performed on a given value
 
 *   A value's type determines what the program can do to it.
 
@@ -82,7 +84,7 @@ TypeError: unsupported operand type(s) for -: 'str' and 'str'
 ~~~
 {: .error}
 
-## You can use the `+` and `*` operators on strings.
+## You can use the `+` and `*` operators on strings
 
 *   "Adding" character strings concatenates them.
 
@@ -110,7 +112,7 @@ print(separator)
 ~~~
 {: .output}
 
-## Strings have a length (but numbers don't).
+## Strings have a length (but numbers don't)
 
 *   The built-in function `len` counts the number of characters in a string.
 
@@ -139,7 +141,7 @@ TypeError: object of type 'int' has no len()
 ~~~
 {: .error}
 
-## Must convert numbers to strings or vice versa when operating on them.
+## Must convert numbers to strings or vice versa when operating on them
 
 *   Cannot add numbers and strings.
 
@@ -171,7 +173,7 @@ print(str(1) + '2')
 ~~~
 {: .output}
 
-## Can mix integers and floats freely in operations.
+## Can mix integers and floats freely in operations
 
 *   Integers and floating-point numbers can be mixed in arithmetic.
     *   Python automatically converts integers to floats as needed.
@@ -187,7 +189,7 @@ three squared is 9.0
 ~~~
 {: .output}
 
-## Variables only change value when something is assigned to them.
+## Variables only change value when something is assigned to them
 
 *   If we make one cell in a spreadsheet depend on another,
     and update the latter,

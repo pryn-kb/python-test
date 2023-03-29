@@ -19,7 +19,7 @@ keypoints:
 - "Python is case-sensitive."
 - "Use meaningful variable names."
 ---
-## Use variables to store values.
+## Use variables to store values
 
 Variables are one of the fundamental building blocks of Python. A variable is like a tiny container where you store values and data, such as filenames, words, numbers, collections of words and numbers, and more.
 
@@ -51,7 +51,7 @@ Variables:
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
-### Use meaningful variable names.
+### Use meaningful variable names
 
 Python doesn't care what you call variables as long as they obey the rules (alphanumeric characters and the underscore).\
 As you start to code, you will almost certainly be tempted to use extremely short variables names like `f`. Your fingers will get tired. Your coffee will wear off. You will see other people using variables like `f`. You’ll promise yourself that you’ll definitely remember what `f` means. But you probably won’t.
@@ -72,7 +72,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 *   Use meaningful variable names to help other people understand what the program does.
 *   The most important "other person" is your future self.
 
-### Python is case-sensitive.
+### Python is case-sensitive
 
 *   Python thinks that upper- and lower-case letters are different,
     so `Name` and `name` are different variables.
@@ -85,7 +85,7 @@ The only variable names that are off-limits are names that are reserved by, or b
 
 This is not something to worry too much about. You’ll know very quickly if a name is reserved by Python because it will show up in green and often give you an error message.
 
-## Use `print` to display values.
+## Use `print` to display values
 
 We can check to see what’s “inside” variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
 
@@ -118,7 +118,7 @@ Ahmed is 42 years old
 *   `print` automatically puts a single space between items to separate them.
 *   And wraps around to a new line at the end.
 
-## Variables must be created before they are used.
+## Variables must be created before they are used
 
 *   If a variable doesn't exist yet, or if the name has been mis-spelled,
     Python reports an error.
@@ -150,7 +150,7 @@ NameError: name 'eye_color' is not defined
 > all of the source code is one long set of instructions.
 {: .callout}
 
-## Variables can be used in calculations.
+## Variables can be used in calculations
 
 *   We can use variables in calculations just as if they were values.
     *   Remember, we assigned 42 to `age` a few lines ago.
@@ -165,7 +165,7 @@ Age in three years: 45
 ~~~
 {: .output}
 
-## Use an index to get a single character from a string.
+## Use an index to get a single character from a string
 
 *   The characters (individual letters, numbers, and so on) in a string are
     ordered. For example, the string 'AB' is not the same as 'BA'. Because of
@@ -186,7 +186,7 @@ h
 ~~~
 {: .output}
 
-## Use a slice to get a substring.
+## Use a slice to get a substring
 
 *   A part of a string is called a substring. A substring can be as short as a
     single character.
@@ -211,7 +211,7 @@ sod
 ~~~
 {: .output}
 
-## Use the built-in function `len` to find the length of a string.
+## Use the built-in function `len` to find the length of a string
 
 ~~~
 print(len('helium'))

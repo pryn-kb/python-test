@@ -19,7 +19,7 @@ keypoints:
 - "Character strings are immutable."
 - "Indexing beyond the end of the collection is an error."
 ---
-## A list stores many values in a single structure.
+## A list stores many values in a single structure
 
 *   Scenario: You have set up an Arduino to do temperature measurements
     in a storage room for rare books.
@@ -42,7 +42,7 @@ length: 5
 ~~~
 {: .output}
 
-## Use an item's index to fetch it from a list.
+## Use an item's index to fetch it from a list
 
 *   Just like strings.
 
@@ -57,7 +57,7 @@ fourth item of temperatures: 17.6
 ~~~
 {: .output}
 
-## Lists' values can be replaced by assigning to them.
+## Lists' values can be replaced by assigning to them
 
 *   Use an index expression on the left of assignment to replace a value.
 
@@ -71,7 +71,7 @@ temperatures is now: [16.5, 17.5, 17.7, 17.5, 17.6]
 ~~~
 {: .output}
 
-## Appending items to a list lengthens it.
+## Appending items to a list lengthens it
 
 *   Use `list_name.append` to add items to the end of a list.
 
@@ -95,7 +95,7 @@ temperatures has become: [16.5, 17.5, 17.7, 17.5, 17.6, 17.9, 18.2]
 *   We will meet other methods of lists as we go along.
     *   Use `help(list)` for a preview.
 
-## Use `del` to remove items from a list entirely.
+## Use `del` to remove items from a list entirely
 
 *   `del list_name[index]` removes an item from a list and shortens the list.
 *   Not a function or a method, but a statement in the language.
@@ -113,14 +113,14 @@ primes after removing last item: [2, 3, 5, 7]
 ~~~
 {: .output}
 
-## The empty list contains no values.
+## The empty list contains no values
 
 *   Use `[]` on its own to represent a list that doesn't contain any values.
     *   "The zero of lists."
 *   Helpful as a starting point for collecting values
     (which we will see in the [next episode]({{page.root}}/12-for-loops/)).
 
-## Lists may contain values of different types.
+## Lists may contain values of different types
 
 *   A single list may contain numbers, strings, and anything else.
 
@@ -129,7 +129,7 @@ goals = [1, 'Create lists.', 2, 'Extract items from lists.', 3, 'Modify lists.']
 ~~~
 {: .python}
 
-## Character strings can be indexed like lists.
+## Character strings can be indexed like lists
 
 *   Get single characters from a character string using indexes in square brackets.
 
@@ -145,7 +145,7 @@ third character: b
 ~~~
 {: .output}
 
-## Character strings are immutable.
+## Character strings are immutable
 
 *   Cannot change the characters in a string after it has been created.
     *   *Immutable*: cannot be changed after creation.
@@ -164,7 +164,7 @@ TypeError: 'str' object does not support item assignment
 
 *   Lists and character strings are both *collections*.
 
-## Indexing beyond the end of the collection is an error.
+## Indexing beyond the end of the collection is an error
 
 *   Python reports an `IndexError` if we attempt to access a value that doesn't exist.
     *   This is a kind of runtime error.

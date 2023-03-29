@@ -24,7 +24,7 @@ keypoints:
 - "Python reports a runtime error when something goes wrong while a program is executing."
 - "Fix syntax errors by reading the source code, and runtime errors by tracing the program's execution."
 ---
-## Use comments to add documentation to programs.
+## Use comments to add documentation to programs
 
 ~~~
 # This sentence isn't executed by Python.
@@ -32,7 +32,7 @@ name = 'Library Carpentry'   # Neither is this comment - anything after '#' is i
 ~~~
 {: .python}
 
-## A function may take zero or more arguments.
+## A function may take zero or more arguments
 
 *   We have seen some functions already --- now let's take a closer look.
 *   An *argument* is a value passed into a function.
@@ -58,7 +58,7 @@ after
 ~~~
 {: .output}
 
-## Commonly-used built-in functions include `max`, `min`, and `round`.
+## Commonly-used built-in functions include `max`, `min`, and `round`
 
 *   Use `max` to find the largest value of one or more values.
 *   Use `min` to find the smallest.
@@ -83,7 +83,7 @@ A
 ~~~
 {: .output}
 
-## Functions may only work for certain (combinations of) arguments.
+## Functions may only work for certain (combinations of) arguments
 
 *   `max` and `min` must be given at least one argument.
 *   And they must be given things that can meaningfully be compared.
@@ -97,7 +97,7 @@ TypeError: unorderable types: str() > int()
 ~~~
 {: .error}
 
-## Functions may have default values for some arguments.
+## Functions may have default values for some arguments
 
 *   `round` will round off a floating-point number.
 *   By default, rounds to zero decimal places.
@@ -122,7 +122,7 @@ round(3.712, 1)
 ~~~
 {: .output}
 
-## Use the built-in function `help` to get help for a function.
+## Use the built-in function `help` to get help for a function
 
 *   Every built-in function has online documentation.
 
@@ -142,7 +142,7 @@ round(...)
 ~~~
 {: .output}
 
-## Python reports a syntax error when grammar rules (that's Python grammar, not English grammar) have been violated.
+## Python reports a syntax error when grammar rules (that's Python grammar, not English grammar) have been violated
 
 *   You've seen errors when you try to use a function incorrectly.
     * Can also have errors when you use punctuation incorrectly.
@@ -191,7 +191,7 @@ SyntaxError: unexpected EOF while parsing
 *   Next is the problematic line of code,
     indicating the problem with a `^` pointer.
 
-## Python reports a runtime error when something goes wrong while a program is executing.
+## Python reports a runtime error when something goes wrong while a program is executing
 
 ~~~
 age = 53
@@ -205,7 +205,7 @@ NameError: name 'aege' is not defined
 
 *   Fix syntax errors by reading the source and runtime errors by tracing execution.
 
-## Every function returns something.
+## Every function returns something
 
 *   Every function call produces some result.
 *   If the function doesn't have a useful result to return,

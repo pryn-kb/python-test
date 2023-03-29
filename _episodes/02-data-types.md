@@ -373,9 +373,8 @@ False
 ~~~
 {: .output}
 
-**Notice the difference between a single equals sign `=` and a double equals sign `==`**
-
-*   A double equals sign `==` is used as the equals operator
-*   A single equals sign `=` is used for variable assignment (We will learn more about this in the lesson about variables)
-
-&nbsp;  
+> ## Notice the difference between a single equals sign `=` and a double equals sign `==`
+> 
+> *   A double equals sign `==` is used as the equals operator
+> *   A single equals sign `=` is used for variable assignment (We will learn more about this in the lesson about variables)
+{: .callout}
