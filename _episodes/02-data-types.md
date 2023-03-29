@@ -378,3 +378,5 @@ False
 > *   A double equals sign `==` is used as the equals operator
 > *   A single equals sign `=` is used for variable assignment (We will learn more about this in the lesson about variables)
 {: .callout}
+
+&nbsp;  
