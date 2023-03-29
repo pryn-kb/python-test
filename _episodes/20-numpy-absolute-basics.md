@@ -472,7 +472,7 @@ Python lists. :
 
 You can visualize it this way:
 
-![image](images/np_indexing.png)
+![image](../fig/np_indexing.png)
 
 You may want to take a section of your array or specific array elements
 to use in further analysis or additional operations. To do that, you\'ll
