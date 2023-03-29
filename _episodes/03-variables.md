@@ -148,7 +148,8 @@ NameError: name 'eye_color' is not defined
 >
 > * Notice the number in the square brackets `[ ]` to the left of the cell.
 > * These numbers indicate the order, in which the cells have been executed.
-> * Cells with lower numbers will affect cells with higher numbers as Python runs the cells chronologically.\
+> * Cells with lower numbers will affect cells with higher numbers as Python runs the cells chronologically.
+>
 > Remember: Notebook cells are just a way to organize a program!\
 > As far as Python is concerned, all of the source code is one long set of instructions.
 {: .callout}
