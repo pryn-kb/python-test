@@ -133,38 +133,57 @@ A backslash character `\` tells Python to treat the next character like a normal
 
 Each data type has different properties and capabilities. So there are special things that only strings can do, and there are special ways of interacting with strings.
 
-For example, you can _index_ and _slice_ strings, you can _add_ strings together, and you can transform strings to uppercase or lowercase.\
-Here are a few examples using a snippet from Beyoncé’s song “Hold Up.”
-
-lemonade\_snippet \= "Hold up, they don't love you like I love you"
+For example, you can **index** and **slice** strings, you can **add** strings together, and you can transform strings to uppercase or lowercase.\
+Here are a few examples:
 
 ### Index
 
-lemonade\_snippet\[0\]
+~~~
+'I am a string'[0]
+~~~
+{: .python}
+~~~
+'I'
+~~~
+{: .output}
 
-'H'
+### Slice
 
-### Slice[¶](#slice "Permalink to this headline")
+~~~
+'I am a string'[0:8]
+~~~
+{: .python}
+~~~
+'I am a s'
+~~~
+{: .output}
 
-lemonade\_snippet\[0:20\]
+### Add
 
-"Hold up, they don't "
+~~~
+'I am a string' + ' and so am I'
+~~~
+{: .python}
+~~~
+'I am a string and so am I'
+~~~
+{: .output}
 
-### Add[¶](#add "Permalink to this headline")
+### Make uppercase
 
-lemonade\_snippet + " // Slow down, they don't love you like I love you"
+~~~
+'I am a string'.upper()
+~~~
+{: .python}
+~~~
+'I AM A STRING'
+~~~
+{: .output}
 
-"Hold up, they don't love you like I love you // Slow down, they don't love you like I love you"
+<!-- ## f-Strings
 
-### Make uppercase[¶](#make-uppercase "Permalink to this headline")
-
-lemonade\_snippet.upper()
-
-"HOLD UP, THEY DON'T LOVE YOU LIKE I LOVE YOU"
-
-## f-Strings[¶](#f-strings "Permalink to this headline")
-
-A special kind of string that we’re going to use in this class is called an _f-string_. An f-string, short for formatted string literal, allows you to insert a variable directly into a string. [f-strings were introduced with Python version 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-features).
+There is a special kind of string called an _f-string_.\
+An f-string, short for formatted string literal, allows you to insert a variable directly into a string. [f-strings were introduced with Python version 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-features).
 
 An f-string must begin with an `f` outside the quotation marks. Then, inside the quotation marks, the inserted variable must be placed within curly brackets `{}`.
 
@@ -176,12 +195,11 @@ print(f"Beyonce burst out of the building and sang: \\n\\n'{lemonade\_snippet}'"
 
 Beyonce burst out of the building and sang: 
 
-'Hold up, they don't love you like I love you'
+'Hold up, they don't love you like I love you' -->
 
-## Integers & Floats[¶](#integers-floats "Permalink to this headline")
--------------------------------------------------------------------
+## Integers & Floats
 
-An _integer_ and a _float_ (short for _floating point number_) are two Python data types for representing numbers. Integers represent whole numbers. Floats represent numbers with decimal points. They do not need to be placed in quotation marks.
+An **integer** and a **float** (short for **floating point number**) are two Python data types for representing numbers. Integers represent whole numbers. Floats represent numbers with decimal points. They do not need to be placed in quotation marks.
 
 ~~~
 type(42)
@@ -205,12 +223,14 @@ You can do a large range of mathematical calculations and operations with intege
 
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Operation</p></th>
+<tr class="row-odd">
+<th class="head"><p>Operation</p></th>
 <th class="head"><p>Explanation</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-even">
+<td><p>`x + y`</p></td>
 <td><p>sum of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> - <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
