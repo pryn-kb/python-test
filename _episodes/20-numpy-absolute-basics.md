@@ -1,3 +1,14 @@
+---
+title: "NumPy: the absolute basics for beginners"
+teaching: 0
+exercises: 0
+questions:
+- "Key question (FIXME)"
+objectives:
+- "Learning objective (FIXME)"
+keypoints:
+- "An introduction to NumPy’s main concepts and links to additional tutorials"
+---
 # NumPy: the absolute basics for beginners
 
 ::: currentmodule
