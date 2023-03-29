@@ -59,6 +59,7 @@ Because these are two different “types” of Python data.
 </tr>
 <tr class="row-odd">
 <td><p>Boolean</p></td>
+<td><p>True/False</p></td>
 <td><p>False</p></td>
 </tr>
 </tbody>
