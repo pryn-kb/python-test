@@ -9,16 +9,6 @@ objectives:
 keypoints:
 - "An introduction to NumPy’s main concepts and links to additional tutorials"
 ---
-# NumPy: the absolute basics for beginners
-
-::: currentmodule
-numpy
-:::
-
-Welcome to the absolute beginner\'s guide to NumPy! If you have comments
-or suggestions, please don't hesitate to [reach
-out](https://numpy.org/community/)!
-
 ## Welcome to NumPy!
 
 NumPy (**Numerical Python**) is an open source Python library that\'s
@@ -40,8 +30,7 @@ structures to Python that guarantee efficient calculations with arrays
 and matrices and it supplies an enormous library of high-level
 mathematical functions that operate on these arrays and matrices.
 
-Learn more about `NumPy here <whatisnumpy>`{.interpreted-text
-role="ref"}!
+Learn more about [NumPy here](https://numpy.org/devdocs/user/whatisnumpy.html#whatisnumpy)!
 
 ## Installing NumPy
 
