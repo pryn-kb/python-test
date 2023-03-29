@@ -1,9 +1,9 @@
 ---
-title: "NumPy: the absolute basics for beginners"
+title: "NumPy"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "The absolute basics for beginners"
 objectives:
 - "Learning objective (FIXME)"
 keypoints:
