@@ -18,12 +18,15 @@ There are four essential kinds of Python data with different powers and capabili
 *   **Floats** (Decimal Numbers)
 *   **Booleans** (True/False)
 
-Take a look at the variables `filepath_of_text` and `number_of_desired_word` in the word count code below.
-
-What differences do you notice between these two variables and their corresponding values?
+Take a look at the two examples below.\
+What differences do you notice?
 
 ~~~
 'Here is a some text'
+~~~
+{: .python}
+
+~~~
 42
 ~~~
 {: .python}
@@ -31,7 +34,7 @@ What differences do you notice between these two variables and their correspondi
 You might be wondering…
 
 Why is 'Here is some text' surrounded by quotation marks while 42 is not?\
-Because these are two different “types” of Python data.
+Because these are two different “types” of Python data. We will look closer at the different types below.
 
 
 <table class="colwidths-auto table" style="border:1px solid black">
@@ -138,6 +141,14 @@ Here are a few examples:
 
 ### Index
 
+Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
+
+In Python, strings are ordered sequences of character data, and thus can be indexed in this way. Individual characters in a string can be accessed by specifying the string name followed by a number in square brackets ([]). 
+
+String indexing in Python is zero-based: the first character in the string has index 0, the next has index 1, and so on. The index of the last character will be the length of the string minus one.
+
+The individual characters can be accessed by index:
+
 ~~~
 'I am a string'[0]
 ~~~
@@ -147,7 +158,18 @@ Here are a few examples:
 ~~~
 {: .output}
 
+~~~
+'I am a string'[7]
+~~~
+{: .python}
+~~~
+'s'
+~~~
+{: .output}
+
 ### Slice
+
+Python  allows a form of indexing syntax that extracts substrings from a string, known as string slicing. If `s` is a string, an expression of the form `s[m:n]` returns the portion of `s` starting with position `m`, and up to but not including position `n`:
 
 ~~~
 'I am a string'[0:8]
@@ -158,7 +180,9 @@ Here are a few examples:
 ~~~
 {: .output}
 
-### Add
+### Concatenation
+
+The `+` operator concatenates strings. It returns a string consisting of the operands joined together, as shown here:
 
 ~~~
 'I am a string' + ' and so am I'
@@ -170,6 +194,8 @@ Here are a few examples:
 {: .output}
 
 ### Make uppercase
+
+The method `upper()` returns a copy of the string with all alphabetic characters converted to uppercase:
 
 ~~~
 'I am a string'.upper()
