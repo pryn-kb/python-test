@@ -80,24 +80,6 @@ str
 {: .output}
 
 ~~~
-type(42)
-~~~
-{: .python}
-~~~
-int
-~~~
-{: .output}
-
-~~~
-type(3.1415926)
-~~~
-{: .python}
-~~~
-float
-~~~
-{: .output}
-
-~~~
 type(False)
 ~~~
 {: .python}
@@ -201,17 +183,23 @@ Beyonce burst out of the building and sang:
 
 An _integer_ and a _float_ (short for _floating point number_) are two Python data types for representing numbers. Integers represent whole numbers. Floats represent numbers with decimal points. They do not need to be placed in quotation marks.
 
-type(40)
-
+~~~
+type(42)
+~~~
+{: .python}
+~~~
 int
+~~~
+{: .output}
 
-type(40.5)
-
+~~~
+type(3.1415926)
+~~~
+{: .python}
+~~~
 float
-
-type(40.555555)
-
-float
+~~~
+{: .output}
 
 You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
