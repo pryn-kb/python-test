@@ -35,40 +35,31 @@ Because these are two different “types” of Python data.
 
 <table class="colwidths-auto table" style="border:1px solid black">
 <thead>
-<tr class="row-odd"><th class="head"><p>Data Type</p></th>
+<tr class="row-odd">
+<th class="head"><p>Data Type</p></th>
 <th class="head"><p>Explanation</p></th>
 <th class="head"><p>Example</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>String</p></td>
+<tr class="row-even">
+<td><p>String</p></td>
 <td><p>Text</p></td>
-<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="s2">&quot;Beyonce-Lemonade.txt&quot;</span><span class="p">,</span>
- <span class="s2">&quot;lemonade&quot;</span>
-</pre></div>
-</div>
-</td>
+<td><p>'Anything goes 4 strings!'</p></td>
 </tr>
-<tr class="row-odd"><td><p>Integer</p></td>
+<tr class="row-odd">
+<td><p>Integer</p></td>
 <td><p>Whole Numbers</p></td>
-<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">40</span>
-</pre></div>
-</div>
-</td>
+<td><p>42</p></td>
 </tr>
-<tr class="row-even"><td><p>Float</p></td>
+<tr class="row-even">
+<td><p>Float</p></td>
 <td><p>Decimal Numbers</p></td>
-<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">40.2</span>
-</pre></div>
-</div>
-</td>
+<td><p>3.1415926</p></td>
 </tr>
-<tr class="row-odd"><td><p>Boolean</p></td>
-<td><p>True/False</p></td>
-<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
-</pre></div>
-</div>
-</td>
+<tr class="row-odd">
+<td><p>Boolean</p></td>
+<td><p>False</p></td>
 </tr>
 </tbody>
 </table>
@@ -92,6 +83,24 @@ type(42)
 {: .python}
 ~~~
 int
+~~~
+{: .output}
+
+~~~
+type(3.1415926)
+~~~
+{: .python}
+~~~
+float
+~~~
+{: .output}
+
+~~~
+type(False)
+~~~
+{: .python}
+~~~
+bool
 ~~~
 {: .output}
 
