@@ -23,7 +23,8 @@ Take a look at the variables `filepath_of_text` and `number_of_desired_word` in 
 What differences do you notice between these two variables and their corresponding values?
 
 ~~~
-print(eye_color)
+'I am red'
+42
 ~~~
 {: .python}
 ~~~
