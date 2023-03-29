@@ -13,10 +13,10 @@ keypoints:
 
 There are four essential kinds of Python data with different powers and capabilities:
 
-*   Strings (Text)
-*   Integers (Whole Numbers)
-*   Floats (Decimal Numbers)
-*   Booleans (True/False)
+*   **Strings** (Text)
+*   **Integers** (Whole Numbers)
+*   **Floats** (Decimal Numbers)
+*   **Booleans** (True/False)
 
 Take a look at the variables `filepath_of_text` and `number_of_desired_word` in the word count code below.
 
