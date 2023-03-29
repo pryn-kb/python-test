@@ -1254,16 +1254,16 @@ For example:
 
     >>> help(max)
     Help on built-in function max in module builtins:
-    <BLANKLINE>
+    
     max(...)
         max(iterable, *[, default=obj, key=func]) -> value
         max(arg1, arg2, *args, *[, key=func]) -> value
-    <BLANKLINE>
+    
         With a single iterable argument, return its biggest item. The
         default keyword-only argument specifies an object to return if
         the provided iterable is empty.
         With two or more arguments, return the largest argument.
-    <BLANKLINE>
+    
 
 Because access to additional information is so useful, IPython uses the
 `?` character as a shorthand for accessing this documentation along with
@@ -1273,17 +1273,15 @@ IPython here](https://ipython.org/).
 
 For example:
 
-``` ipython
-In [0]: max?
-max(iterable, *[, default=obj, key=func]) -> value
-max(arg1, arg2, *args, *[, key=func]) -> value
+    In [0]: max?
+    max(iterable, *[, default=obj, key=func]) -> value
+    max(arg1, arg2, *args, *[, key=func]) -> value
 
-With a single iterable argument, return its biggest item. The
-default keyword-only argument specifies an object to return if
-the provided iterable is empty.
-With two or more arguments, return the largest argument.
-Type:      builtin_function_or_method
-```
+    With a single iterable argument, return its biggest item. The
+    default keyword-only argument specifies an object to return if
+    the provided iterable is empty.
+    With two or more arguments, return the largest argument.
+    Type:      builtin_function_or_method
 
 You can even use this notation for object methods and objects
 themselves.
