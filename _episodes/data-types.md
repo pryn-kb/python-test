@@ -33,7 +33,7 @@ You might be wondering…
 Why is 'Here is some text' surrounded by quotation marks while 42 is not?\
 Because these are two different “types” of Python data.
 
-<table class="colwidths-given table" style="width:75%">
+<table border="1" class="center" style="width:75%">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -230,9 +230,6 @@ You can do a large range of mathematical calculations and operations with intege
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> // <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>floored quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
-<td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> % <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>remainder of <code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
