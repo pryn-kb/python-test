@@ -283,7 +283,7 @@ You can do a large range of mathematical calculations and operations with intege
 </tr>
 <tr class="row-even">
 <td><p><code class="docutils literal notranslate"><span class="pre">x // y</span></code></p></td>
-<td><p>floored quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and</p></td>
+<td><p>floored quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
 <tr class="row-even">
 <td><p><code class="docutils literal notranslate"><span class="pre">x % y</span></code></p></td>
