@@ -46,6 +46,8 @@ import numpy as `np`.
 
 ## Reading the example code
 
+**The code in this lesson looks a litte bit different from the code in the previous lessons**
+
 If you aren\'t already comfortable with reading tutorials that contain a
 lot of code, you might not know how to interpret a code block that looks
 like this:
