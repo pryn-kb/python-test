@@ -230,43 +230,55 @@ You can do a large range of mathematical calculations and operations with intege
 </thead>
 <tbody>
 <tr class="row-even">
-<td><p>`x + y`</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x + y</span></code></p></td>
 <td><p>sum of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> - <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-odd">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> - <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>difference of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> * <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-even">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> * <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>product of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-odd">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> // <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-even">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> // <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>floored quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> % <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-even">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> % <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p>remainder of <code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>-<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+<tr class="row-odd">
+<td><p>-<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> negated</p></td>
 </tr>
-<tr class="row-even"><td><p>+<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+<tr class="row-even">
+<td><p>+<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> unchanged</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">abs(x)</span></code></p></td>
+<tr class="row-odd">
+<td><p><code class="docutils literal notranslate"><span class="pre">abs(x)</span></code></p></td>
 <td><p>absolute value or magnitude of <code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">int(x)</span></code></p></td>
+<tr class="row-even">
+<td><p><code class="docutils literal notranslate"><span class="pre">int(x)</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to integer</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">float(x)</span></code></p></td>
+<tr class="row-odd">
+<td><p><code class="docutils literal notranslate"><span class="pre">float(x)</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to floating point</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></p></td>
+<tr class="row-even">
+<td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> ** <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<tr class="row-odd">
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> ** <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
 </tr>
 </tbody>
