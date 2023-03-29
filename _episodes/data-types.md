@@ -23,15 +23,15 @@ Take a look at the variables `filepath_of_text` and `number_of_desired_word` in 
 What differences do you notice between these two variables and their corresponding values?
 
 ~~~
-'I am red'
+'Here is a some text'
 42
 ~~~
 {: .python}
-~~~
 
 You might be wondering…
 
-Why is “…/texts/music/Beyonce-Lemonade.txt” colored in red and surrounded by quotation marks while 40 is colored in green and not surrounded by quotation marks? Because these are two different “types” of Python data.
+Why is 'Here is some text' surrounded by quotation marks while 42 is not?\
+Because these are two different “types” of Python data.
 
 <table class="colwidths-given table">
 <colgroup>
@@ -78,88 +78,103 @@ Why is “…/texts/music/Beyonce-Lemonade.txt” colored in red and surrounded 
 </tbody>
 </table>
 
-Check Data Types[¶](#check-data-types "Permalink to this headline")
--------------------------------------------------------------------
+## Check Data Types
 
 You can check the data type of any value by using the function `type()`.
 
-type("lemonade")
-
+~~~
+type('Here is some text)
+~~~
+{: .python}
+~~~
 str
+~~~
+{: .output}
 
-type(filepath\_of\_text)
-
-str
-
-type(40)
-
+~~~
+type(42)
+~~~
+{: .python}
+~~~
 int
+~~~
+{: .output}
 
-type(number\_of\_desired\_words)
-
-int
-
-Strings[¶](#strings "Permalink to this headline")
--------------------------------------------------
+## Strings
 
 A _string_ is a Python data type that is treated like text, even if it contains a number. Strings are always enclosed by either single quotation marks `'this is a string'` or double quotation marks `"this is a string"`.
 
+~~~
 'this is a string'
+~~~
+{: .python}
 
+~~~
 "this is also a string, even though it contains a number like 42"
+~~~
+{: .python}
 
+~~~
 this is not a string
+~~~
+{: .python}
 
 It doesn’t matter whether you use single or double quotation marks with strings, as long as you use the same kind on either side of the string.
 
 If you need to include a single or double quotation mark _inside_ of a string, then you need to either:
 
 *   use the opposite kind of quotation mark inside the string
-    
 *   or “escape” the quotation mark by using a backslash `\` before it
     
 
-Escape characters
+**Escape characters**
 
 A backslash character `\` tells Python to treat the next character like a normal character and to ignore any special meaning
 
+~~~
 "She exclaimed, 'This is a quotation inside a string!''"
+~~~
+{: .python}
 
+~~~
 "She exclaimed, \\"This is also a quotation inside a string!\\""
+~~~
+{: .python}
 
-### String Methods[¶](#string-methods "Permalink to this headline")
+## String Methods
 
 Each data type has different properties and capabilities. So there are special things that only strings can do, and there are special ways of interacting with strings.
 
-For example, you can _index_ and _slice_ strings, you can _add_ strings together, and you can transform strings to uppercase or lowercase. We’re going to learn more about [string methods](https://melaniewalsh.github.io/Intro-Cultural-Analytics/Python/String-Methods.html) in the next lesson, but here are a few examples using a snippet from Beyoncé’s song “Hold Up.”
+For example, you can _index_ and _slice_ strings, you can _add_ strings together, and you can transform strings to uppercase or lowercase.\
+Here are a few examples using a snippet from Beyoncé’s song “Hold Up.”
 
 lemonade\_snippet \= "Hold up, they don't love you like I love you"
 
-#### Index[¶](#index "Permalink to this headline")
+### Index
 
 lemonade\_snippet\[0\]
 
 'H'
 
-#### Slice[¶](#slice "Permalink to this headline")
+### Slice[¶](#slice "Permalink to this headline")
 
 lemonade\_snippet\[0:20\]
 
 "Hold up, they don't "
 
-#### Add[¶](#add "Permalink to this headline")
+### Add[¶](#add "Permalink to this headline")
 
 lemonade\_snippet + " // Slow down, they don't love you like I love you"
 
 "Hold up, they don't love you like I love you // Slow down, they don't love you like I love you"
 
-#### Make uppercase[¶](#make-uppercase "Permalink to this headline")
+### Make uppercase[¶](#make-uppercase "Permalink to this headline")
 
 lemonade\_snippet.upper()
 
 "HOLD UP, THEY DON'T LOVE YOU LIKE I LOVE YOU"
 
-### f-Strings[¶](#f-strings "Permalink to this headline")
+## f-Strings[¶](#f-strings "Permalink to this headline")
 
 A special kind of string that we’re going to use in this class is called an _f-string_. An f-string, short for formatted string literal, allows you to insert a variable directly into a string. [f-strings were introduced with Python version 3.6](https://docs.python.org/3/whatsnew/3.6.html#new-features).
 
@@ -175,7 +190,7 @@ Beyonce burst out of the building and sang:
 
 'Hold up, they don't love you like I love you'
 
-Integers & Floats[¶](#integers-floats "Permalink to this headline")
+## Integers & Floats[¶](#integers-floats "Permalink to this headline")
 -------------------------------------------------------------------
 
 An _integer_ and a _float_ (short for _floating point number_) are two Python data types for representing numbers. Integers represent whole numbers. Floats represent numbers with decimal points. They do not need to be placed in quotation marks.
@@ -194,63 +209,57 @@ float
 
 You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
-Operation
-
-Explanation
-
-`x` + `y`
-
-sum of `x` and `y`
-
-`x` - `y`
-
-difference of `x` and `y`
-
-`x` \* `y`
-
-product of `x` and `y`
-
-`x` / `y`
-
-quotient of `x` and `y`
-
-`x` // `y`
-
-floored quotient of `x` and
-
-`y`
-
-`x` % `y`
-
-remainder of `x` / `y`
-
-\-`x`
-
-`x` negated
-
-+`x`
-
-`x` unchanged
-
-`abs(x)`
-
-absolute value or magnitude of `x`
-
-`int(x)`
-
-`x` converted to integer
-
-`float(x)`
-
-`x` converted to floating point
-
-`pow(x, y)`
-
-`x` to the power `y`
-
-`x` \*\* `y`
-
-`x` to the power `y`
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operation</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>sum of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> - <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>difference of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> * <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>product of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> // <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>floored quotient of <code class="docutils literal notranslate"><span class="pre">x</span></code> and</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> % <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p>remainder of <code class="docutils literal notranslate"><span class="pre">x</span></code> / <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>-<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> negated</p></td>
+</tr>
+<tr class="row-even"><td><p>+<code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> unchanged</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">abs(x)</span></code></p></td>
+<td><p>absolute value or magnitude of <code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">int(x)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to integer</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">float(x)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to floating point</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> ** <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+</tr>
+</tbody>
+</table>
 
 ### Multiplication[¶](#multiplication "Permalink to this headline")
 
@@ -260,7 +269,7 @@ variable1 \* variable2
 
 8
 
-#### Exponents[¶](#exponents "Permalink to this headline")
+### Exponents[¶](#exponents "Permalink to this headline")
 
 variable1 \*\* variable2
 
@@ -272,8 +281,7 @@ variable1 \*\* variable2
 
 2
 
-Booleans[¶](#booleans "Permalink to this headline")
----------------------------------------------------
+## Booleans
 
 Booleans are “truth” values. They report on whether things in your Python universe are `True` or `False`. There are the only two options for a boolean: `True` or `False`.
 
@@ -304,8 +312,7 @@ beyonce \== "Oscar award-winner"
 
 False
 
-TypeError[¶](#typeerror "Permalink to this headline")
------------------------------------------------------
+## TypeError
 
 If you don’t use the right data “type” for a particular method or function, you will get a `TypeError.`
 
@@ -367,84 +374,3 @@ TypeError                                 Traceback (most recent call last)
     548 
 
 TypeError: '>=' not supported between instances of 'str' and 'int'
-
-Your Turn![¶](#your-turn "Permalink to this headline")
-------------------------------------------------------
-
-Here’s an example of data types in action using some biographical information about me.
-
-name \= 'Prof. Walsh' #string
-age \= 1000 #integer
-place \= 'Chicago' #string 
-favorite\_food \= 'tacos' #string
-dog\_years\_age \= age \* 7.5 #float
-student \= False #boolean
-
-print(f'✨This is...{name}!✨')
-
-print(f"""{name} likes {favorite\_food} and once lived in {place}.
-{name} is {age} years old, which is {dog\_years\_age} in dog years.
-The statement '{name} is a student' is {student}.""")
-
-✨This is...Prof. Walsh!✨
-Prof. Walsh likes tacos and once lived in Chicago.
-Prof. Walsh is 1000 years old, which is 7500.0 in dog years.
-The statement 'Prof. Walsh is a student' is False.
-
-print(f"""
-name = {type(name)}
-age = {type(age)}
-place = {type(place)}
-favorite\_food = {type(favorite\_food)}
-dog\_years\_age = {type(dog\_years\_age)}
-student = {type(student)}
-""")
-
-name = <class 'str'>
-age = <class 'int'>
-place = <class 'str'>
-favorite\_food = <class 'str'>
-dog\_years\_age = <class 'float'>
-student = <class 'bool'>
-
-Let’s do the same thing but with biographical info about you! Ask your partner a few questions and then fill in the variables below accordingly.
-
-name \= #Your code here
-age \= #Your code here
-home\_town \= #Your code here
-favorite\_food \= #Your code here
-dog\_years\_age \=#Your code here \* 7.5
-student \= False #boolean
-
-print(f'✨This is...{name}!✨')
-
-print(f"""{name} likes {favorite\_food} and once lived in {place}.
-{name} is {age} years old, which is {dog\_years\_age} in dog years.
-The statement "{name} is a student" is {student}.""")
-
-Add a new variable called `favorite_movie` and update the f-string to include a new sentence about your partner’s favorite movie.
-
-name \= 
-age \= 
-home\_town \= 
-favorite\_food \= 
-dog\_years\_age \=
-#favorite\_movie = 
-
-print(f'✨This is...{name}!✨')
-
-print(f"""{name} likes {favorite\_food} and once lived in {place}.
-{name} is {age} years old, which is {dog\_years\_age} in dog years.
-The statement "{name} is a student" is {student}.
-\# YOUR NEW SENTENCE HERE')
-
-{ requestKernel: true, binderOptions: { repo: "binder-examples/jupyter-stacks-datascience", ref: "master", }, codeMirrorConfig: { theme: "abcdef", mode: "python" }, kernelOptions: { kernelName: "python3", path: "./02-Python" }, predefinedOutput: true } kernelName = 'python3'
-
-[Variables](04-Variables.html "previous page") [String Methods](06-String-Methods.html "next page")
-
-By [Melanie Walsh](https://melaniewalsh.org/)  
-© Copyright 2021.  
-
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/) This book is licensed under a [Creative Commons BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-window.ga = window.ga || function () { (ga.q = ga.q || \[\]).push(arguments) }; ga.l = +new Date; ga('create', 'UA-86905362-3', 'auto'); ga('set', 'anonymizeIp', true); ga('send', 'pageview');
