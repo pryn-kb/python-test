@@ -1598,9 +1598,7 @@ All you need to do to plot your values is run:
     # If you are running from a command line, you may need to do this:
     # >>> plt.show()
 
-::: {.plot align="center" include-source="0"}
-user/plots/matplotlib1.py
-:::
+![image](../fig/matplotlib1.png)
 
 For example, you can plot a 1D array like this:
 
@@ -1609,9 +1607,7 @@ For example, you can plot a 1D array like this:
     >>> plt.plot(x, y, 'purple') # line
     >>> plt.plot(x, y, 'o')      # dots
 
-::: {.plot align="center" include-source="0"}
-user/plots/matplotlib2.py
-:::
+![image](../fig/matplotlib2.png)
 
 With Matplotlib, you have access to an enormous number of visualization
 options. :
@@ -1626,9 +1622,7 @@ options. :
 
     >>> ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis')
 
-::: {.plot align="center" include-source="0"}
-user/plots/matplotlib3.py
-:::
+![image](../fig/matplotlib3.png)
 
 To read more about Matplotlib and what it can do, take a look at [the
 official documentation](https://matplotlib.org/). For directions
