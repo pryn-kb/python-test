@@ -11,24 +11,9 @@ keypoints:
 ---
 ## Welcome to NumPy!
 
-NumPy (**Numerical Python**) is an open source Python library that\'s
-used in almost every field of science and engineering. It\'s the
-universal standard for working with numerical data in Python, and it\'s
-at the core of the scientific Python and PyData ecosystems. NumPy users
-include everyone from beginning coders to experienced researchers doing
-state-of-the-art scientific and industrial research and development. The
-NumPy API is used extensively in Pandas, SciPy, Matplotlib,
-scikit-learn, scikit-image and most other data science and scientific
-Python packages.
+NumPy (**Numerical Python**) is an open source Python library that\'s used in almost every field of science and engineering. It\'s the universal standard for working with numerical data in Python, and it\'s at the core of the scientific Python and PyData ecosystems. NumPy users include everyone from beginning coders to experienced researchers doing state-of-the-art scientific and industrial research and development. The NumPy API is used extensively in Pandas, SciPy, Matplotlib, scikit-learn, scikit-image and most other data science and scientific Python packages.
 
-The NumPy library contains multidimensional array and matrix data
-structures (you\'ll find more information about this in later sections).
-It provides **ndarray**, a homogeneous n-dimensional array object, with
-methods to efficiently operate on it. NumPy can be used to perform a
-wide variety of mathematical operations on arrays. It adds powerful data
-structures to Python that guarantee efficient calculations with arrays
-and matrices and it supplies an enormous library of high-level
-mathematical functions that operate on these arrays and matrices.
+The NumPy library contains multidimensional array and matrix data structures (you\'ll find more information about this in later sections). It provides **ndarray**, a homogeneous n-dimensional array object, with methods to efficiently operate on it. NumPy can be used to perform a wide variety of mathematical operations on arrays. It adds powerful data structures to Python that guarantee efficient calculations with arrays and matrices and it supplies an enormous library of high-level mathematical functions that operate on these arrays and matrices.
 
 Learn more about [NumPy here](https://numpy.org/devdocs/user/whatisnumpy.html#whatisnumpy)!
 
@@ -36,10 +21,7 @@ Learn more about [NumPy here](https://numpy.org/devdocs/user/whatisnumpy.html#wh
 
 **If you are using Google Colab you can skip this part, as NumPy is already pre-installed**
 
-To install NumPy, we strongly recommend using a scientific Python
-distribution. If you\'re looking for the full instructions for
-installing NumPy on your operating system, see [Installing
-NumPy](https://numpy.org/install/).
+To install NumPy, we strongly recommend using a scientific Python distribution. If you\'re looking for the full instructions for installing NumPy on your operating system, see [Installing NumPy](https://numpy.org/install/).
 
 If you already have Python, you can install NumPy with:
 
@@ -49,17 +31,11 @@ or :
 
     pip install numpy
 
-<!-- If you don\'t have Python yet, you might want to consider using
-[Anaconda](https://www.anaconda.com/). It\'s the easiest way to get
-started. The good thing about getting this distribution is the fact that
-you don't need to worry too much about separately installing NumPy or
-any of the major packages that you'll be using for your data analyses,
-like pandas, Scikit-Learn, etc. -->
+<!-- If you don\'t have Python yet, you might want to consider using [Anaconda](https://www.anaconda.com/). It\'s the easiest way to get started. The good thing about getting this distribution is the fact that you don't need to worry too much about separately installing NumPy or any of the major packages that you'll be using for your data analyses, like pandas, Scikit-Learn, etc. -->
 
 ## How to import NumPy
 
-To access NumPy and its functions import it in your Python code like
-this:
+To access NumPy and its functions import it in your Python code like this:
 
     import numpy as np
 
@@ -107,13 +83,7 @@ types. This allows the code to be optimized even further.
 
 ## What is an array?
 
-An array is a central data structure of the NumPy library. An array is a
-grid of values and it contains information about the raw data, how to
-locate an element, and how to interpret an element. It has a grid of
-elements that can be indexed in
-`various ways <quickstart.indexing-slicing-and-iterating>`{.interpreted-text
-role="ref"}. The elements are all of the same type, referred to as the
-array `dtype`.
+An array is a central data structure of the NumPy library. An array is a grid of values and it contains information about the raw data, how to locate an element, and how to interpret an element. It has a grid of elements that can be indexed in [various ways](https://numpy.org/devdocs/user/quickstart.html#quickstart-indexing-slicing-and-iterating). The elements are all of the same type, referred to as the array `dtype`.
 
 An array can be indexed by a tuple of nonnegative integers, by booleans,
 by another array, or by integers. The `rank` of the array is the number
@@ -181,9 +151,7 @@ Array **attributes** reflect information intrinsic to the array itself.
 If you need to get, or even set, properties of an array without creating
 a new array, you can often access an array through its attributes.
 
-`Read more about array attributes here <arrays.ndarray>`{.interpreted-text
-role="ref"} and learn about
-`array objects here <arrays>`{.interpreted-text role="ref"}.
+[Read more about array attributes here](https://numpy.org/devdocs/reference/arrays.ndarray.html#arrays-ndarray) and learn about [array objects here](https://numpy.org/devdocs/reference/arrays.html#arrays).
 
 ## How to create a basic array
 
@@ -196,8 +164,7 @@ To create a NumPy array, you can use the function `np.array()`.
 
 All you need to do to create a simple array is pass a list to it. If you
 choose to, you can also specify the type of data in your list.
-`You can find more information about data types here <arrays.dtypes>`{.interpreted-text
-role="ref"}. :
+[You can find more information about data types here](https://numpy.org/devdocs/reference/arrays.dtypes.html#arrays-dtypes).
 
     >>> import numpy as np
     >>> a = np.array([1, 2, 3])
@@ -257,8 +224,7 @@ explicitly specify which data type you want using the `dtype` keyword. :
     >>> x
     array([1, 1])
 
-`Learn more about creating arrays here <quickstart.array-creation>`{.interpreted-text
-role="ref"}
+[Learn more about creating arrays here.](https://numpy.org/devdocs/user/quickstart.html#quickstart-array-creation)
 
 ## Adding, removing, and sorting elements
 
@@ -281,15 +247,15 @@ You can quickly sort the numbers in ascending order with:
 In addition to sort, which returns a sorted copy of an array, you can
 use:
 
--   [argsort]{.title-ref}, which is an indirect sort along a specified
+-   [argsort](https://numpy.org/devdocs/reference/generated/numpy.argsort.html#numpy.argsort), which is an indirect sort along a specified
     axis,
--   [lexsort]{.title-ref}, which is an indirect stable sort on multiple
+-   [lexsort](https://numpy.org/devdocs/reference/generated/numpy.lexsort.html#numpy.lexsort), which is an indirect stable sort on multiple
     keys,
--   [searchsorted]{.title-ref}, which will find elements in a sorted
+-   [searchsorted](https://numpy.org/devdocs/reference/generated/numpy.searchsorted.html#numpy.searchsorted), which will find elements in a sorted
     array, and
--   [partition]{.title-ref}, which is a partial sort.
+-   [partition](https://numpy.org/devdocs/reference/generated/numpy.partition.html#numpy.partition), which is a partial sort.
 
-To read more about sorting an array, see: [sort]{.title-ref}.
+To read more about sorting an array, see: [sort](https://numpy.org/devdocs/reference/generated/numpy.sort.html#numpy.sort).
 
 If you start with these arrays:
 
@@ -316,7 +282,7 @@ You can concatenate them with:
 In order to remove elements from an array, it\'s simple to use indexing
 to select the elements that you want to keep.
 
-To read more about concatenate, see: [concatenate]{.title-ref}.
+To read more about concatenate, see: [concatenate](https://numpy.org/devdocs/reference/generated/numpy.concatenate.html#numpy.concatenate).
 
 ## How do you know the shape and size of an array?
 
@@ -409,8 +375,7 @@ Fortran contiguous in memory, C-like order otherwise. (This is an
 optional parameter and doesn\'t need to be specified.)
 
 If you want to learn more about C and Fortran order, you can
-`read more about the internal organization of NumPy arrays here <numpy-internals>`{.interpreted-text
-role="ref"}. Essentially, C and Fortran orders have to do with how
+[read more about the internal organization of NumPy arrays here](https://numpy.org/devdocs/dev/internals.html#numpy-internals). Essentially, C and Fortran orders have to do with how
 indices correspond to the order the array is stored in memory. In
 Fortran, when moving through the elements of a two-dimensional array as
 it is stored in memory, the **first** index is the most rapidly varying
@@ -422,8 +387,7 @@ a **Row-major language**. What you do for C or Fortran depends on
 whether it\'s more important to preserve the indexing convention or not
 reorder the data.
 
-`Learn more about shape manipulation here <quickstart.shape-manipulation>`{.interpreted-text
-role="ref"}.
+[Learn more about shape manipulation here](https://numpy.org/devdocs/user/quickstart.html#quickstart-shape-manipulation).
 
 ## How to convert a 1D array into a 2D array (how to add a new axis to an array)
 
@@ -487,8 +451,8 @@ You can add an axis at index position 0 with:
     (1, 6)
 
 Find more information about
-`newaxis here <arrays.indexing>`{.interpreted-text role="ref"} and
-`expand_dims` at [expand_dims]{.title-ref}.
+[newaxis here](https://numpy.org/devdocs/reference/arrays.indexing.html#arrays-indexing) and
+[expand_dims](https://numpy.org/devdocs/reference/generated/numpy.expand_dims.html#numpy.expand_dims).
 
 ## Indexing and slicing
 
@@ -604,10 +568,9 @@ returned array of indices will be empty. For example:
     (array([], dtype=int64), array([], dtype=int64))
 
 Learn more about
-`indexing and slicing here <quickstart.indexing-slicing-and-iterating>`{.interpreted-text
-role="ref"} and `here <basics.indexing>`{.interpreted-text role="ref"}.
+[indexing and slicing here](https://numpy.org/devdocs/user/quickstart.html#quickstart-indexing-slicing-and-iterating) and [here](https://numpy.org/devdocs/user/basics.indexing.html#basics-indexing).
 
-Read more about using the nonzero function at: [nonzero]{.title-ref}.
+Read more about using the nonzero function at: [nonzero](https://numpy.org/devdocs/reference/generated/numpy.nonzero.html#numpy.nonzero).
 
 ## How to create an array from existing data
 
@@ -684,8 +647,7 @@ you\'d run:
              [16]]), array([[ 5,  6,  7,  8,  9, 10, 11, 12],
              [17, 18, 19, 20, 21, 22, 23, 24]])]
 
-`Learn more about stacking and splitting arrays here <quickstart.stacking-arrays>`{.interpreted-text
-role="ref"}.
+[Learn more about stacking and splitting arrays here](https://numpy.org/devdocs/user/quickstart.html#quickstart-stacking-arrays).
 
 You can use the `view` method to create a new array object that looks at
 the same data as the original array (a *shallow copy*).
@@ -719,8 +681,7 @@ data (a *deep copy*). To use this on your array, you could run:
 
     >>> b2 = a.copy()
 
-`Learn more about copies and views here <quickstart.copies-and-views>`{.interpreted-text
-role="ref"}.
+[Learn more about copies and views here](https://numpy.org/devdocs/user/quickstart.html#quickstart-copies-and-views).
 
 ## Basic array operations
 
@@ -733,7 +694,7 @@ Once you\'ve created your arrays, you can start to work with them.
 Let\'s say, for example, that you\'ve created two arrays, one called
 \"data\" and one called \"ones\"
 
-![image](images/np_array_dataones.png)
+![image](../fig/np_array_dataones.png)
 
 You can add the arrays together with the plus sign.
 
@@ -742,7 +703,7 @@ You can add the arrays together with the plus sign.
     >>> data + ones
     array([2, 3])
 
-![image](images/np_data_plus_ones.png)
+![image](../fig/np_data_plus_ones.png)
 
 You can, of course, do more than just addition!
 
@@ -753,7 +714,7 @@ You can, of course, do more than just addition!
     >>> data / data
     array([1., 1.])
 
-![image](images/np_sub_mult_divide.png)
+![image](../fig/np_sub_mult_divide.png)
 
 Basic operations are simple with NumPy. If you want to find the sum of
 the elements in an array, you\'d use `sum()`. This works for 1D arrays,
@@ -781,8 +742,7 @@ You can sum over the axis of columns with:
     >>> b.sum(axis=1)
     array([2, 4])
 
-`Learn more about basic operations here <quickstart.basic-operations>`{.interpreted-text
-role="ref"}.
+[Learn more about basic operations here](https://numpy.org/devdocs/user/quickstart.html#quickstart-basic-operations).
 
 ## Broadcasting
 
@@ -797,7 +757,7 @@ You can perform this operation with:
     >>> data * 1.6
     array([1.6, 3.2])
 
-![image](images/np_multiply_broadcasting.png)
+![image](../fig/np_multiply_broadcasting.png)
 
 NumPy understands that the multiplication should happen with each cell.
 That concept is called **broadcasting**. Broadcasting is a mechanism
@@ -806,8 +766,7 @@ The dimensions of your array must be compatible, for example, when the
 dimensions of both arrays are equal or when one of them is 1. If the
 dimensions are not compatible, you will get a `ValueError`.
 
-`Learn more about broadcasting here <basics.broadcasting>`{.interpreted-text
-role="ref"}.
+[Learn more about broadcasting here](https://numpy.org/devdocs/user/basics.broadcasting.html#basics-broadcasting).
 
 ## More useful array operations
 
@@ -828,7 +787,7 @@ standard deviation, and more. :
     >>> data.sum()
     3.0
 
-![image](images/np_aggregation.png)
+![image](../fig/np_aggregation.png)
 
 Let\'s start with this array, called \"a\" :
 
@@ -860,9 +819,7 @@ The four values listed above correspond to the number of columns in your
 array. With a four-column array, you will get four values as your
 result.
 
-Read more about
-`array methods here <array.ndarray.methods>`{.interpreted-text
-role="ref"}.
+Read more about [array methods here](https://numpy.org/devdocs/reference/arrays.ndarray.html#array-ndarray-methods).
 
 ## Creating matrices
 
@@ -875,7 +832,7 @@ to represent them in NumPy. :
            [3, 4],
            [5, 6]])
 
-![image](images/np_create_matrix.png)
+![image](../fig/np_create_matrix.png)
 
 Indexing and slicing operations are useful when you\'re manipulating
 matrices:
@@ -888,7 +845,7 @@ matrices:
     >>> data[0:2, 0]
     array([1, 3])
 
-![image](images/np_matrix_indexing.png)
+![image](../fig/np_matrix_indexing.png)
 
 You can aggregate matrices the same way you aggregated vectors:
 
@@ -899,7 +856,7 @@ You can aggregate matrices the same way you aggregated vectors:
     >>> data.sum()
     21
 
-![image](images/np_matrix_aggregation.png)
+![image](../fig/np_matrix_aggregation.png)
 
 You can aggregate all the values in a matrix and you can aggregate them
 across columns or rows using the `axis` parameter. To illustrate this
@@ -915,7 +872,7 @@ point, let\'s look at a slightly modified dataset:
     >>> data.max(axis=1)
     array([2, 5, 6])
 
-![image](images/np_matrix_aggregation_row.png)
+![image](../fig/np_matrix_aggregation_row.png)
 
 Once you\'ve created your matrices, you can add and multiply them using
 arithmetic operators if you have two matrices that are the same size. :
@@ -926,7 +883,7 @@ arithmetic operators if you have two matrices that are the same size. :
     array([[2, 3],
            [4, 5]])
 
-![image](images/np_matrix_arithmetic.png)
+![image](../fig/np_matrix_arithmetic.png)
 
 You can do these arithmetic operations on matrices of different sizes,
 but only if one matrix has only one column or one row. In this case,
@@ -939,7 +896,7 @@ NumPy will use its broadcast rules for the operation. :
            [4, 5],
            [6, 7]])
 
-![image](images/np_matrix_broadcasting.png)
+![image](../fig/np_matrix_broadcasting.png)
 
 Be aware that when NumPy prints N-dimensional arrays, the last axis is
 looped over the fastest while the first axis is the slowest. For
@@ -975,7 +932,7 @@ need to do is pass in the number of elements you want it to generate:
     >>> rng.random(3) #doctest: +SKIP
     array([0.63696169, 0.26978671, 0.04097352])
 
-![image](images/np_ones_zeros_random.png)
+![image](../fig/np_ones_zeros_random.png)
 
 You can also use `ones()`, `zeros()`, and `random()` to create a 2D
 array if you give them a tuple describing the dimensions of the matrix:
@@ -993,12 +950,9 @@ array if you give them a tuple describing the dimensions of the matrix:
            [0.91275558, 0.60663578],
            [0.72949656, 0.54362499]])  # may vary
 
-![image](images/np_ones_zeros_matrix.png)
+![image](../fig/np_ones_zeros_matrix.png)
 
-Read more about creating arrays, filled with `0`\'s, `1`\'s, other
-values or uninitialized, at
-`array creation routines <routines.array-creation>`{.interpreted-text
-role="ref"}.
+Read more about creating arrays, filled with `0`\'s, `1`\'s, other values or uninitialized, at [array creation routines](https://numpy.org/devdocs/reference/routines.array-creation.html#routines-array-creation).
 
 ## Generating random numbers
 
@@ -1019,8 +973,7 @@ You can generate a 2 x 4 array of random integers between 0 and 4 with:
     array([[2, 1, 1, 0],
            [0, 0, 0, 4]])  # may vary
 
-`Read more about random number generation here <numpyrandom>`{.interpreted-text
-role="ref"}.
+[Read more about random number generation here](https://numpy.org/devdocs/reference/random/index.html#numpyrandom).
 
 ## How to get unique items and counts
 
@@ -1093,7 +1046,7 @@ use:
     [2 1 1]
 
 To learn more about finding the unique elements in an array, see
-[unique]{.title-ref}.
+[unique](https://numpy.org/devdocs/reference/generated/numpy.unique.html#numpy.unique).
 
 ## Transposing and reshaping a matrix
 
@@ -1104,7 +1057,7 @@ To learn more about finding the unique elements in an array, see
 It\'s common to need to transpose your matrices. NumPy arrays have the
 property `T` that allows you to transpose a matrix.
 
-![image](images/np_transposing_reshaping.png)
+![image](../fig/np_transposing_reshaping.png)
 
 You may also need to switch the dimensions of a matrix. This can happen
 when, for example, you have a model that expects a certain input shape
@@ -1120,7 +1073,7 @@ want for the matrix. :
            [3, 4],
            [5, 6]])
 
-![image](images/np_reshape.png)
+![image](../fig/np_reshape.png)
 
 You can also use `.transpose()` to reverse or change the axes of an
 array according to the values you specify.
@@ -1147,7 +1100,7 @@ You can also use `arr.T`:
            [2, 5]])
 
 To learn more about transposing and reshaping arrays, see
-[transpose]{.title-ref} and [reshape]{.title-ref}.
+[transpose](https://numpy.org/devdocs/reference/generated/numpy.transpose.html#numpy.transpose) and [reshape]https://numpy.org/devdocs/reference/generated/numpy.reshape.html#numpy.reshape.
 
 ## How to reverse an array
 
@@ -1227,7 +1180,7 @@ You can also reverse the column at index position 1 (the second column):
      [ 8  7  6  5]
      [ 9  2 11 12]]
 
-Read more about reversing arrays at [flip]{.title-ref}.
+Read more about reversing arrays at [flip](https://numpy.org/devdocs/reference/generated/numpy.flip.html#numpy.flip).
 
 ## Reshaping and flattening multidimensional arrays
 
@@ -1279,8 +1232,8 @@ For example:
     >>> print(a2)  # New array
     [98  2  3  4  5  6  7  8  9 10 11 12]
 
-Read more about `flatten` at [ndarray.flatten]{.title-ref} and `ravel`
-at [ravel]{.title-ref}.
+Read more about `flatten` at [ndarray.flatten](https://numpy.org/devdocs/reference/generated/numpy.ndarray.flatten.html#numpy.ndarray.flatten) and `ravel`
+at [ravel](https://numpy.org/devdocs/reference/generated/numpy.ravel.html#numpy.ravel).
 
 ## How to access the docstring for more information
 
@@ -1446,18 +1399,18 @@ Python community.
 For example, this is the mean square error formula (a central formula
 used in supervised machine learning models that deal with regression):
 
-![image](images/np_MSE_formula.png)
+![image](../fig/np_MSE_formula.png)
 
 Implementing this formula is simple and straightforward in NumPy:
 
-![image](images/np_MSE_implementation.png)
+![image](../fig/np_MSE_implementation.png)
 
 What makes this work so well is that `predictions` and `labels` can
 contain one or a thousand values. They only need to be the same size.
 
 You can visualize it this way:
 
-![image](images/np_mse_viz1.png)
+![image](../fig/np_mse_viz1.png)
 
 In this example, both the predictions and labels vectors contain three
 values, meaning `n` has a value of three. After we carry out
@@ -1465,9 +1418,9 @@ subtractions the values in the vector are squared. Then NumPy sums the
 values, and your result is the error value for that prediction and a
 score for the quality of the model.
 
-![image](images/np_mse_viz2.png)
+![image](../fig/np_mse_viz2.png)
 
-![image](images/np_MSE_explanation2.png)
+![image](../fig/np_MSE_explanation2.png)
 
 ## How to save and load NumPy objects
 
@@ -1490,11 +1443,7 @@ information required to reconstruct the ndarray in a way that allows the
 array to be correctly retrieved, even when the file is on another
 machine with different architecture.
 
-If you want to store a single ndarray object, store it as a .npy file
-using `np.save`. If you want to store more than one ndarray object in a
-single file, save it as a .npz file using `np.savez`. You can also save
-several arrays into a single file in compressed npz format with
-[savez_compressed]{.title-ref}.
+If you want to store a single ndarray object, store it as a .npy file using `np.save`. If you want to store more than one ndarray object in a single file, save it as a .npz file using `np.savez`. You can also save several arrays into a single file in compressed npz format with [savez_compressed](https://numpy.org/devdocs/reference/generated/numpy.savez_compressed.html#numpy.savez_compressed).
 
 It\'s easy to save and load and array with `np.save()`. Just make sure
 to specify the array you want to save and a file name. For example, if
@@ -1532,19 +1481,11 @@ You can quickly and easily load your saved text file using `loadtxt()`:
     >>> np.loadtxt('new_file.csv')
     array([1., 2., 3., 4., 5., 6., 7., 8.])
 
-The `savetxt()` and `loadtxt()` functions accept additional optional
-parameters such as header, footer, and delimiter. While text files can
-be easier for sharing, .npy and .npz files are smaller and faster to
-read. If you need more sophisticated handling of your text file (for
-example, if you need to work with lines that contain missing values),
-you will want to use the [genfromtxt]{.title-ref} function.
+The `savetxt()` and `loadtxt()` functions accept additional optional parameters such as header, footer, and delimiter. While text files can be easier for sharing, .npy and .npz files are smaller and faster to read. If you need more sophisticated handling of your text file (for example, if you need to work with lines that contain missing values), you will want to use the [genfromtxt](https://numpy.org/devdocs/reference/generated/numpy.genfromtxt.html#numpy.genfromtxt) function.
 
-With [savetxt]{.title-ref}, you can specify headers, footers, comments,
-and more.
+With [savetxt](https://numpy.org/devdocs/reference/generated/numpy.savetxt.html#numpy.savetxt), you can specify headers, footers, comments, and more.
 
-Learn more about
-`input and output routines here <routines.io>`{.interpreted-text
-role="ref"}.
+Learn more about [input and output routines here](https://numpy.org/devdocs/reference/routines.io.html#routines-io).
 
 ## Importing and exporting a CSV
 
@@ -1577,7 +1518,7 @@ best and easiest way to do this is to use
      ['Miles Davis' 48000000]
      ['SIA' 74000000]]
 
-![image](images/np_pandas.png)
+![image](../fig/np_pandas.png)
 
 It\'s simple to use Pandas in order to export your array as well. If you
 are new to NumPy, you may want to create a Pandas dataframe from the
@@ -1609,7 +1550,7 @@ And read your CSV with:
 
     >>> data = pd.read_csv('pd.csv')
 
-![image](images/np_readcsv.png)
+![image](../fig/np_readcsv.png)
 
 You can also save your array with the NumPy `savetxt` method. :
 
