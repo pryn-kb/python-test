@@ -33,7 +33,7 @@ You might be wondering…
 Why is 'Here is some text' surrounded by quotation marks while 42 is not?\
 Because these are two different “types” of Python data.
 
-<table class="colwidths-given table">
+<table class="colwidths-given table" style="width:75%">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -83,7 +83,7 @@ Because these are two different “types” of Python data.
 You can check the data type of any value by using the function `type()`.
 
 ~~~
-type('Here is some text)
+type('Here is some text')
 ~~~
 {: .python}
 ~~~
@@ -137,7 +137,7 @@ A backslash character `\` tells Python to treat the next character like a normal
 {: .python}
 
 ~~~
-"She exclaimed, \\"This is also a quotation inside a string!\\""
+"She exclaimed, \"This is also a quotation inside a string!\""
 ~~~
 {: .python}
 
