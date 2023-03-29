@@ -284,116 +284,62 @@ You can do a large range of mathematical calculations and operations with intege
 </tbody>
 </table>
 
-### Multiplication[¶](#multiplication "Permalink to this headline")
+### Multiplication
 
-variable1 \= 4
-variable2 \= 2
-variable1 \* variable2
-
+~~~
+4 * 2
+~~~
+{: .python}
+~~~
 8
+~~~
+{: .output}
 
-### Exponents[¶](#exponents "Permalink to this headline")
+### Exponents
 
-variable1 \*\* variable2
-
+~~~
+4 ** 2
+~~~
+{: .python}
+~~~
 16
+~~~
+{: .output}
 
-### Remainder[¶](#remainder "Permalink to this headline")
+### Remainder
 
+~~~
 72 % 10
-
+~~~
+{: .python}
+~~~
 2
+~~~
+{: .output}
 
 ## Booleans
 
 Booleans are “truth” values. They report on whether things in your Python universe are `True` or `False`. There are the only two options for a boolean: `True` or `False`.
 
-For example, let’s assign the variable `beyonce` the value `"Grammy award-winner"`
-
-beyonce \= "Grammy award-winner"
-
-Python Review
-
-Remember the difference between a single equals sign `=` and a double equals sign `==`?
-
-*   A single equals sign \`=\` is used for variable assignment
-*   A double equals sign \`==\` is used as the equals operator
-
-We can “test” whether the variable `beyonce` equals `"Grammy award-winner"` by using the equals operator `==`. This will return a boolean.
-
-beyonce \== "Grammy award-winner"
-
+~~~
+13 < 17
+~~~
+{: .python}
+~~~
 True
+~~~
+{: .output}
 
-type(beyonce \== "Grammy award-winner")
-
-bool
-
-If we evaluate whether `beyonce` instead equals `"Oscar award-winner"`, we will get the boolean answer.
-
-beyonce \== "Oscar award-winner"
-
+~~~
+666 == 777
+~~~
+{: .python}
+~~~
 False
+~~~
+{: .output}
 
-## TypeError
+**Notice the difference between a single equals sign `=` and a double equals sign `==`**
 
-If you don’t use the right data “type” for a particular method or function, you will get a `TypeError.`
-
-Let’s look at what happens if we change the data type `number_of_desired_words` to a string `"40"` instead of an integer.
-
-import re
-from collections import Counter
-
-def split\_into\_words(any\_chunk\_of\_text):
-    lowercase\_text \= any\_chunk\_of\_text.lower()
-    split\_words \= re.split("\\W+", lowercase\_text)
-    return split\_words
-
-filepath\_of\_text \= "../texts/music/Beyonce-Lemonade.txt"
-number\_of\_desired\_words \= "40"
-stopwords \= \['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours',
- 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers',
- 'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves',
- 'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'is', 'are',
- 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does',
- 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until',
- 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into',
- 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down',
- 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here',
- 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more',
- 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so',
- 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now', 've', 'll', 'amp'\]
-
-full\_text \= open(filepath\_of\_text, encoding\="utf-8").read()
-
-all\_the\_words \= split\_into\_words(full\_text)
-meaningful\_words \= \[word for word in all\_the\_words if word not in stopwords\]
-meaningful\_words\_tally \= Counter(meaningful\_words)
-most\_frequent\_meaningful\_words \= meaningful\_words\_tally.most\_common(number\_of\_desired\_words)
-
-most\_frequent\_meaningful\_words
-
-\---------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython\-input\-7\-a142b58e454a\> in <module\>
-     29 meaningful\_words \= \[word for word in all\_the\_words if word not in stopwords\]
-     30 meaningful\_words\_tally \= Counter(meaningful\_words)
-\---> 31 most\_frequent\_meaningful\_words \= meaningful\_words\_tally.most\_common(number\_of\_desired\_words)
-     32 
-     33 most\_frequent\_meaningful\_words
-
-~/opt/anaconda3/lib/python3.7/collections/\_\_init\_\_.py in most\_common(self, n)
-    584         if n is None:
-    585             return sorted(self.items(), key\=\_itemgetter(1), reverse\=True)
-\--> 586         return \_heapq.nlargest(n, self.items(), key\=\_itemgetter(1))
-    587 
-    588     def elements(self):
-
-~/opt/anaconda3/lib/python3.7/heapq.py in nlargest(n, iterable, key)
-    544         pass
-    545     else:
-\--> 546         if n \>= size:
-    547             return sorted(iterable, key\=key, reverse\=True)\[:n\]
-    548 
-
-TypeError: '>=' not supported between instances of 'str' and 'int'
+*   A double equals sign \`==\` is used as the equals operator
+*   A single equals sign \`=\` is used for variable assignment (We will learn more about this in the lesson about variables)
