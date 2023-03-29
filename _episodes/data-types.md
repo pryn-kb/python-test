@@ -33,7 +33,7 @@ You might be wondering…
 Why is 'Here is some text' surrounded by quotation marks while 42 is not?\
 Because these are two different “types” of Python data.
 
-<table class="colwidths-auto table" style="border:1px">
+<table class="colwidths-auto table" style="width:50%; border:1px solid black">
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Type</p></th>
 <th class="head"><p>Explanation</p></th>
