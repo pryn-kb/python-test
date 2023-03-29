@@ -34,6 +34,8 @@ Learn more about [NumPy here](https://numpy.org/devdocs/user/whatisnumpy.html#wh
 
 ## Installing NumPy
 
+**If you are using Google Colab you can skip this part, as NumPy is already pre-installed**
+
 To install NumPy, we strongly recommend using a scientific Python
 distribution. If you\'re looking for the full instructions for
 installing NumPy on your operating system, see [Installing
@@ -47,12 +49,12 @@ or :
 
     pip install numpy
 
-If you don\'t have Python yet, you might want to consider using
+<!-- If you don\'t have Python yet, you might want to consider using
 [Anaconda](https://www.anaconda.com/). It\'s the easiest way to get
 started. The good thing about getting this distribution is the fact that
 you don't need to worry too much about separately installing NumPy or
 any of the major packages that you'll be using for your data analyses,
-like pandas, Scikit-Learn, etc.
+like pandas, Scikit-Learn, etc. -->
 
 ## How to import NumPy
 
@@ -202,7 +204,7 @@ role="ref"}. :
 
 You can visualize your array this way:
 
-![image](images/np_array.png)
+![image](../fig/np_array.png)
 
 *Be aware that these visualizations are meant to simplify ideas and give
 you a basic understanding of NumPy concepts and mechanics. Arrays and
