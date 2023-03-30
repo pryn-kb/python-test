@@ -14,17 +14,16 @@ keypoints:
 
 Polynomials in NumPy can be *created*, *manipulated*, and even *fitted*
 using the
-`convenience classes <routines.polynomials.classes>`{.interpreted-text
-role="doc"} of the [numpy.polynomial]{.title-ref} package, introduced in
+[convenience classes](https://numpy.org/devdocs/reference/routines.polynomials.classes.html) of the [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) package, introduced in
 NumPy 1.4.
 
-Prior to NumPy 1.4, [numpy.poly1d]{.title-ref} was the class of choice
+Prior to NumPy 1.4, [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) was the class of choice
 and it is still available in order to maintain backward compatibility.
 However, the newer [polynomial package \<numpy.polynomial\>]{.title-ref}
 is more complete and its [convenience classes
 \<routines.polynomials.classes\>]{.title-ref} provide a more consistent,
 better-behaved interface for working with polynomial expressions.
-Therefore `numpy.polynomial`{.interpreted-text role="mod"} is
+Therefore [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) is
 recommended for new coding.
 
 ::: note
