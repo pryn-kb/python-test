@@ -85,7 +85,7 @@ imported for brevity:
 </tbody>
 </table>
 
-\[1\] Note the reversed ordering of the coefficients
+[1] Note the reversed ordering of the coefficients
 
 ### Transition Guide
 
