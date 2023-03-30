@@ -103,7 +103,7 @@ degree **i**.
 Though the difference in convention may be confusing, it is
 straightforward to convert from the legacy polynomial API to the new.
 For example, the following demonstrates how you would convert a
-[`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) instance representing the expression $x^{2} + 2x + 3$ og $\mathbf{\mathit{x + y = z}}$ to a
+[`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) instance representing the expression $x^{2} + 2x + 3$ to a
 [Polynomial](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.html#numpy.polynomial.polynomial.Polynomial) instance
 representing the same expression:\
 
