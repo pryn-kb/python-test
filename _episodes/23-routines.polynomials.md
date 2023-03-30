@@ -63,25 +63,25 @@ imported for brevity:
 <thead>
 <tr class="row-odd">
 <th class="head"><p>How to…</p></th>
-<th class="head"><p><a href="https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d">Legacy (numpy.poly1d)</a></p></th>
-<th class="head"><p><a href="https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial">numpy.polynomial</a></p></th>
+<th class="head"><p><a href="https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d">Legacy (<code class="docutils literal notranslate"><span class="pre">numpy.poly1d</span></code>)</a></p></th>
+<th class="head"><p><a href="https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial"><code class="docutils literal notranslate"><span class="pre">numpy.polynomial</span></code></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even">
 <td><p>Create a polynomial object from coefficients [1]</p></td>
-<td><p>p = np.poly1d([1, 2, 3])</p></td>
-<td><p>p = Polynomial([3, 2, 1])</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">p = np.poly1d([1, 2, 3])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">p = Polynomial([3, 2, 1])</span></code></p></td>
 </tr>
 <tr class="row-odd">
 <td><p>Create a polynomial object from roots</p></td>
-<td><p>r = np.poly([-1, 1]) p = np.poly1d(r)</p></td>
-<td><p>p = Polynomial.fromroots([-1, 1])</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r = np.poly([-1, 1]) p = np.poly1d(r)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">p = Polynomial.fromroots([-1, 1])</span></code></p></td>
 </tr>
 <tr class="row-even">
 <td><p>Fit a polynomial of degree deg to data</p></td>
-<td><p>np.polyfit(x, y, deg)</p></td>
-<td><p>Polynomial.fit(x, y, deg)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">np.polyfit(x, y, deg)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Polynomial.fit(x, y, deg)</span></code></p></td>
 </tr>
 </tbody>
 </table>
