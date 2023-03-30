@@ -1,4 +1,16 @@
-# Polynomials {#routines.polynomial}
+---
+title: "Polynomials"
+teaching: 0
+exercises: 0
+questions:
+- "FIXME"
+objectives:
+- "Learning objective (FIXME)"
+keypoints:
+- "FIXME"
+---
+
+## Polynomials
 
 Polynomials in NumPy can be *created*, *manipulated*, and even *fitted*
 using the

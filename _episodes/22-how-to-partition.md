@@ -1,4 +1,16 @@
-# How to create arrays with regularly-spaced values {#how-to-partition}
+---
+title: "Arrays with regularly-spaced values"
+teaching: 0
+exercises: 0
+questions:
+- "linspace, arrange, geomspace, logspace, meshgrid, mgrid, ogrid"
+objectives:
+- "Learning objective (FIXME)"
+keypoints:
+- "There are a few NumPy functions that are similar in application, but which provide slightly different results, which may cause confusion if one is not sure when and how to use them. The following guide aims to list these functions and describe their recommended usage."
+---
+
+## How to create arrays with regularly-spaced values
 
 There are a few NumPy functions that are similar in application, but
 which provide slightly different results, which may cause confusion if
@@ -7,7 +19,7 @@ list these functions and describe their recommended usage.
 
 The functions mentioned here are
 
--   [numpy.linspace]{.title-ref}
+-   [numpy.linspace]({.title-ref})
 -   [numpy.arange]{.title-ref}
 -   [numpy.geomspace]{.title-ref}
 -   [numpy.logspace]{.title-ref}
