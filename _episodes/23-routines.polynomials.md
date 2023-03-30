@@ -25,7 +25,7 @@ Therefore [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.poly
 > **Terminology**
 > 
 > The term *polynomial module* refers to the old API defined in
-> **numpy.lib.polynomial**, which includes the
+> `numpy.lib.polynomial`, which includes the
 > [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) 
 > class and the polynomial functions prefixed with *poly* accessible from the 
 > [`numpy`](https://numpy.org/devdocs/reference/index.html#module-numpy)
@@ -91,20 +91,20 @@ imported for brevity:
 ### Transition Guide
 
 There are significant differences between `numpy.lib.polynomial` and
-[numpy.polynomial]{.title-ref}. The most significant difference is the
+[`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial). The most significant difference is the
 ordering of the coefficients for the polynomial expressions. The various
-routines in [numpy.polynomial]{.title-ref} all deal with series whose
+routines in [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) all deal with series whose
 coefficients go from degree zero upward, which is the *reverse order* of
 the poly1d convention. The easy way to remember this is that indices
 correspond to degree, i.e., `coef[i]` is the coefficient of the term of
-degree *i*.
+degree **i**.
 
 Though the difference in convention may be confusing, it is
 straightforward to convert from the legacy polynomial API to the new.
 For example, the following demonstrates how you would convert a
-[numpy.poly1d]{.title-ref} instance representing the expression
-$x^{2} + 2x + 3$ to a
-[\~numpy.polynomial.polynomial.Polynomial]{.title-ref} instance
+[`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) instance representing the expression
+***x^{2} + 2x + 3*** to a
+[**Polynomial**](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.html#numpy.polynomial.polynomial.Polynomial) instance
 representing the same expression:
 
     >>> p1d = np.poly1d([1, 2, 3])
