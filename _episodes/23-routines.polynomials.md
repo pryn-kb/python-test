@@ -82,10 +82,11 @@ imported for brevity:
 <td><p>Fit a polynomial of degree deg to data</p></td>
 <td><p>np.polyfit(x, y, deg)</p></td>
 <td><p>Polynomial.fit(x, y, deg)</p></td>
+</tr>
 </tbody>
 </table>
 
-[1] Note the reversed ordering of the coefficients
+\[1\] Note the reversed ordering of the coefficients
 
 ### Transition Guide
 
