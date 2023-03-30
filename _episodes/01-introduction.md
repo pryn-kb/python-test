@@ -1,15 +1,16 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - "Key question (FIXME)"
 objectives:
-- "First learning objective. (FIXME)"
+- "Learning objective (FIXME)"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Keypoints (FIXME)"
 ---
-FIXME
+Before moving on, make sure you visited the [Setup page](../setup.md).
+
 
 {% include links.md %}
 
