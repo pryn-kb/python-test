@@ -19,49 +19,49 @@ list these functions and describe their recommended usage.
 
 The functions mentioned here are
 
--   [numpy.linspace]({.title-ref})
--   [numpy.arange]{.title-ref}
--   [numpy.geomspace]{.title-ref}
--   [numpy.logspace]{.title-ref}
--   [numpy.meshgrid]{.title-ref}
--   [numpy.mgrid]{.title-ref}
--   [numpy.ogrid]{.title-ref}
+-   [numpy.linspace](https://numpy.org/devdocs/reference/generated/numpy.linspace.html#numpy.linspace)
+-   [numpy.arange](https://numpy.org/devdocs/reference/generated/numpy.arange.html#numpy.arange)
+-   [numpy.geomspace](https://numpy.org/devdocs/reference/generated/numpy.geomspace.html#numpy.geomspace)
+-   [numpy.logspace](https://numpy.org/devdocs/reference/generated/numpy.logspace.html#numpy.logspace)
+-   [numpy.meshgrid](https://numpy.org/devdocs/reference/generated/numpy.meshgrid.html#numpy.meshgrid)
+-   [numpy.mgrid](https://numpy.org/devdocs/reference/generated/numpy.mgrid.html#numpy.mgrid)
+-   [numpy.ogrid](https://numpy.org/devdocs/reference/generated/numpy.ogrid.html#numpy.ogrid)
 
 ## 1D domains (intervals)
 
-### `linspace` vs. `arange`
+### `linspace` vs. `arrange`
 
-Both [numpy.linspace]{.title-ref} and [numpy.arange]{.title-ref} provide
+Both `numpy.linspace` and `numpy.arrange` provide
 ways to partition an interval (a 1D domain) into equal-length
 subintervals. These partitions will vary depending on the chosen
 starting and ending points, and the **step** (the length of the
 subintervals).
 
--   **Use** [numpy.arange]{.title-ref} **if you want integer steps.**
+-   **Use** `numpy.arrange` **if you want integer steps.**
 
-    [numpy.arange]{.title-ref} relies on step size to determine how many
+    `numpy.arrange` relies on step size to determine how many
     elements are in the returned array, which excludes the endpoint.
-    This is determined through the `step` argument to `arange`.
+    This is determined through the **step** argument to `arrange`.
 
     Example:
 
         >>> np.arange(0, 10, 2)  # np.arange(start, stop, step)
         array([0, 2, 4, 6, 8])
 
-    The arguments `start` and `stop` should be integer or real, but not
-    complex numbers. [numpy.arange]{.title-ref} is similar to the Python
-    built-in :py`range`{.interpreted-text role="class"}.
+    The arguments **start** and **stop** should be integer or real, but not
+    complex numbers. `numpy.arrange` is similar to the Python
+    built-in [range](https://docs.python.org/3/library/stdtypes.html#range).
 
-    Floating-point inaccuracies can make `arange` results with
+    Floating-point inaccuracies can make `arrange` results with
     floating-point numbers confusing. In this case, you should use
-    [numpy.linspace]{.title-ref} instead.
+    `numpy.linspace` instead.
 
--   **Use** [numpy.linspace]{.title-ref} **if you want the endpoint to
+-   **Use** `numpy.linspace` **if you want the endpoint to
     be included in the result, or if you are using a non-integer step
     size.**
 
-    [numpy.linspace]{.title-ref} *can* include the endpoint and
-    determines step size from the [num]{.title-ref} argument, which
+    `numpy.linspace` *can* include the endpoint and
+    determines step size from the **num** argument, which
     specifies the number of elements in the returned array.
 
     The inclusion of the endpoint is determined by an optional boolean
@@ -76,7 +76,7 @@ subintervals).
         >>> np.linspace(0.1, 0.2, num=5, endpoint=False)
         array([0.1, 0.12, 0.14, 0.16, 0.18])
 
-    [numpy.linspace]{.title-ref} can also be used with complex
+    `numpy.linspace` can also be used with complex
     arguments:
 
         >>> np.linspace(1+1.j, 4, 5, dtype=np.complex64)
@@ -86,7 +86,7 @@ subintervals).
 ### Other examples
 
 1.  Unexpected results may happen if floating point values are used as
-    `step` in `numpy.arange`. To avoid this, make sure all floating
+    **step** in `numpy.arange`. To avoid this, make sure all floating
     point conversion happens after the computation of results. For
     example, replace
 
@@ -151,7 +151,7 @@ end points specified as logarithms (with base 10 as default):
     array([ 100.        ,  177.827941  ,  316.22776602,  562.34132519, 1000.        ])
 
 In linear space, the sequence starts at `base ** start` (`base` to the
-power of `start`) and ends with `base ** stop`:
+power of **start**) and ends with `base ** stop`:
 
     >>> np.logspace(2, 3, num=5, base=2)
     array([4.        , 4.75682846, 5.65685425, 6.72717132, 8.        ])
@@ -193,9 +193,7 @@ generate the coordinate pairs determining this grid.
 >     >>> import matplotlib.pyplot as plt
 >     >>> plt.plot(xx, yy, marker='.', color='k', linestyle='none')
 
-::: {.plot align="center" include-source="0"}
-user/plots/meshgrid_plot.py
-:::
+![image](../fig/meshgrid_plot.png)
 
 ### `mgrid`
 
@@ -232,7 +230,7 @@ dimension of each returned array is greater than 1. This avoids
 repeating the data and thus saves memory, which is often desirable.
 
 These sparse coordinate grids are intended to be use with
-`broadcasting`{.interpreted-text role="ref"}. When all coordinates are
+`broadcasting`(https://scipy-lectures.org/intro/numpy/operations.html#broadcasting). When all coordinates are
 used in an expression, broadcasting still leads to a fully-dimensonal
 result array.
 
