@@ -17,44 +17,37 @@ using the
 [convenience classes](https://numpy.org/devdocs/reference/routines.polynomials.classes.html) of the [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) package, introduced in
 NumPy 1.4.
 
-Prior to NumPy 1.4, [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) was the class of choice
-and it is still available in order to maintain backward compatibility.
-However, the newer [polynomial package \<numpy.polynomial\>]{.title-ref}
-is more complete and its [convenience classes
-\<routines.polynomials.classes\>]{.title-ref} provide a more consistent,
-better-behaved interface for working with polynomial expressions.
-Therefore [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) is
-recommended for new coding.
+Prior to NumPy 1.4, [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) was the class of choice and it is still available in order to maintain backward compatibility. However, the newer [**polynomial package**](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) is more complete and its *convenience classes* provide a more consistent, better-behaved interface for working with polynomial expressions.\
+Therefore [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) is recommended for new coding.
 
-::: note
-::: title
-Note
-:::
 
-**Terminology**
 
-The term *polynomial module* refers to the old API defined in
-[numpy.lib.polynomial]{.title-ref}, which includes the
-`numpy.poly1d`{.interpreted-text role="class"} class and the polynomial
-functions prefixed with *poly* accessible from the [numpy]{.title-ref}
-namespace (e.g. [numpy.polyadd]{.title-ref},
-[numpy.polyval]{.title-ref}, [numpy.polyfit]{.title-ref}, etc.).
+> **Terminology**
+> 
+> The term *polynomial module* refers to the old API defined in
+> **numpy.lib.polynomial**, which includes the
+> [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) 
+> class and the polynomial functions prefixed with *poly* accessible from the 
+> [`numpy`](https://numpy.org/devdocs/reference/index.html#module-numpy)
+> namespace (e.g. 
+> [`numpy.polyadd`](https://numpy.org/devdocs/reference/generated/numpy.polyadd.html#numpy.polyadd),
+> [`numpy.polyval`](https://numpy.org/devdocs/reference/generated/numpy.polyval.html#numpy.polyval), 
+> [`numpy.polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit), etc.).
+> 
+> The term *polynomial package* refers to the new API defined in
+> [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial), which includes the convenience classes
+> for the different kinds of polynomials
+> (**numpy.polynomial.Polynomial**,
+> **numpy.polynomial.Chebyshev**, etc.).
+{: .callout}
 
-The term *polynomial package* refers to the new API defined in
-[numpy.polynomial]{.title-ref}, which includes the convenience classes
-for the different kinds of polynomials
-([numpy.polynomial.Polynomial]{.title-ref},
-[numpy.polynomial.Chebyshev]{.title-ref}, etc.).
-:::
+## Transitioning from [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) to [`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial)
 
-## Transitioning from [numpy.poly1d]{.title-ref} to [numpy.polynomial]{.title-ref}
-
-As noted above, the `poly1d class <numpy.poly1d>`{.interpreted-text
-role="class"} and associated functions defined in
-`numpy.lib.polynomial`, such as [numpy.polyfit]{.title-ref} and
-[numpy.poly]{.title-ref}, are considered legacy and should **not** be
+As noted above, the [**poly1d class**(https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d)] and associated functions defined in
+**numpy.lib.polynomial**, such as [`numpy.polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit) and
+[`numpy.poly`](https://numpy.org/devdocs/reference/generated/numpy.poly.html#numpy.poly), are considered legacy and should **not** be
 used in new code. Since NumPy version 1.4, the
-[numpy.polynomial]{.title-ref} package is preferred for working with
+[`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) package is preferred for working with
 polynomials.
 
 ### Quick Reference
@@ -66,27 +59,33 @@ imported for brevity:
 
     from numpy.polynomial import Polynomial
 
-+-----------------+----------------------+-----------------------------+
-| > **How         | Legacy               | [nu                         |
-| > to\...**      | ([numpy.             | mpy.polynomial]{.title-ref} |
-|                 | poly1d]{.title-ref}) |                             |
-+-----------------+----------------------+-----------------------------+
-| Create a        | `p = n               | `p = Polynomial([3, 2, 1])` |
-| polynomial      | p.poly1d([1, 2, 3])` |                             |
-| object from     |                      |                             |
-| c               |                      |                             |
-| oefficients[^1] |                      |                             |
-+-----------------+----------------------+-----------------------------+
-| Create a        | `r                   | `p = Pol                    |
-| polynomial      |  = np.poly([-1, 1])` | ynomial.fromroots([-1, 1])` |
-| object from     | `p = np.poly1d(r)`   |                             |
-| roots           |                      |                             |
-+-----------------+----------------------+-----------------------------+
-| Fit a           | `np                  | `Polynomial.fit(x, y, deg)` |
-| polynomial of   | .polyfit(x, y, deg)` |                             |
-| degree `deg` to |                      |                             |
-| data            |                      |                             |
-+-----------------+----------------------+-----------------------------+
+<table class="colwidths-auto table" style="border:1px solid black">
+<thead>
+<tr class="row-odd">
+<th class="head"><p>How to…</p></th>
+<th class="head"><p><a href="https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d">Legacy (numpy.poly1d)</a></p></th>
+<th class="head"><p><a href="https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial">numpy.polynomial</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p>Create a polynomial object from coefficients [1]</p></td>
+<td><p>p = np.poly1d([1, 2, 3])</p></td>
+<td><p>p = Polynomial([3, 2, 1])</p></td>
+</tr>
+<tr class="row-odd">
+<td><p>Create a polynomial object from roots</p></td>
+<td><p>r = np.poly([-1, 1]) p = np.poly1d(r)</p></td>
+<td><p>p = Polynomial.fromroots([-1, 1])</p></td>
+</tr>
+<tr class="row-even">
+<td><p>Fit a polynomial of degree deg to data</p></td>
+<td><p>np.polyfit(x, y, deg)</p></td>
+<td><p>Polynomial.fit(x, y, deg)</p></td>
+</tbody>
+</table>
+
+\[1\] Note the reversed ordering of the coefficients
 
 ### Transition Guide
 

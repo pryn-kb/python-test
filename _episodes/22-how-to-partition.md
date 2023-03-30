@@ -29,7 +29,7 @@ The functions mentioned here are
 
 ## 1D domains (intervals)
 
-### **linspace** vs. **arrange**
+### `linspace` vs. `arrange`
 
 Both `numpy.linspace` and `numpy.arrange` provide
 ways to partition an interval (a 1D domain) into equal-length
