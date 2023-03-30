@@ -105,7 +105,7 @@ For example, the following demonstrates how you would convert a
 [`numpy.poly1d`](https://numpy.org/devdocs/reference/generated/numpy.poly1d.html#numpy.poly1d) instance representing the expression ***x^{2} + 2x + 3*** to a
 [**Polynomial**](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.html#numpy.polynomial.polynomial.Polynomial) instance
 representing the same expression:\
-$x^{2} + 2x + 3$\
+$`x^{2} + 2x + 3`$
 $$x^{2} + 2x + 3$$
 
     >>> p1d = np.poly1d([1, 2, 3])
