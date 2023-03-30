@@ -69,7 +69,7 @@ imported for brevity:
 </thead>
 <tbody>
 <tr class="row-even">
-<td><p>Create a polynomial object from coefficients [1]</p></td>
+<td><p>Create a polynomial object from coefficients <b>[1]</b></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">p = np.poly1d([1, 2, 3])</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">p = Polynomial([3, 2, 1])</span></code></p></td>
 </tr>
@@ -86,7 +86,7 @@ imported for brevity:
 </tbody>
 </table>
 
-\[1\] Note the reversed ordering of the coefficients
+<b>\[1\]</b> Note the reversed ordering of the coefficients
 
 ### Transition Guide
 
