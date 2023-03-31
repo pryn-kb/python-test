@@ -185,35 +185,34 @@ Polynomial([1.23135249, 0.75901174], domain=[-1.,  1.], window=[-1.,  1.], symbo
 ~~~
 {: .output}
 
-## Documentation for the [\~numpy.polynomial]{.title-ref} Package
+## Documentation for the [`polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) Package
 
 In addition to standard power series polynomials, the polynomial package
 provides several additional kinds of polynomials including Chebyshev,
 Hermite (two subtypes), Laguerre, and Legendre polynomials. Each of
-these has an associated [convenience class
-\<routines.polynomials.classes\>]{.title-ref} available from the
-[numpy.polynomial]{.title-ref} namespace that provides a consistent
+these has an associated **convenience class** available from the
+[`numpy.polynomial`](https://numpy.org/devdocs/reference/routines.polynomials.package.html#module-numpy.polynomial) namespace that provides a consistent
 interface for working with polynomials regardless of their type.
 
-::: {.toctree maxdepth="1"}
-routines.polynomials.classes
-:::
+[Using the Convenience Classes](https://numpy.org/devdocs/reference/routines.polynomials.classes.html)
 
 Documentation pertaining to specific functions defined for each kind of
 polynomial individually can be found in the corresponding module
 documentation:
 
-::: {.toctree maxdepth="1"}
-routines.polynomials.polynomial routines.polynomials.chebyshev
-routines.polynomials.hermite routines.polynomials.hermite_e
-routines.polynomials.laguerre routines.polynomials.legendre
-routines.polynomials.polyutils
-:::
+[Power Series (`numpy.polynomial.polynomial`)](https://numpy.org/devdocs/reference/routines.polynomials.polynomial.html)
+[Chebyshev Series (`numpy.polynomial.chebyshev`)](https://numpy.org/devdocs/reference/routines.polynomials.chebyshev.html)
+[Hermite Series, “Physicists” (`numpy.polynomial.hermite`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite.html)
+[HermiteE Series, “Probabilists” (`numpy.polynomial.hermite_e`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite_e.html)
+[Laguerre Series (`numpy.polynomial.laguerre`)](https://numpy.org/devdocs/reference/routines.polynomials.laguerre.html)
+[Legendre Series (`numpy.polynomial.legendre`)](https://numpy.org/devdocs/reference/routines.polynomials.legendre.html)
+[Polyutils](https://numpy.org/devdocs/reference/routines.polynomials.polyutils.html)
 
 ## Documentation for Legacy Polynomials
 
-::: {.toctree maxdepth="2"}
-routines.polynomials.poly1d
-:::
-
-[^1]: Note the reversed ordering of the coefficients
+[Poly1d](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html)
+    [Basics](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#basics)
+    [Fitting](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#fitting)
+    [Calculus](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#calculus)
+    [Arithmetic](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#arithmetic)
+    [Warnings](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#warnings)
