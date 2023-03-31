@@ -210,9 +210,9 @@ documentation:
 
 ## Documentation for Legacy Polynomials
 
-[Poly1d](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html)
-    [Basics](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#basics)
-    [Fitting](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#fitting)
-    [Calculus](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#calculus)
-    [Arithmetic](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#arithmetic)
-    [Warnings](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#warnings)
+[Poly1d](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html)\
+    [Basics](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#basics)\
+    [Fitting](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#fitting)\
+    [Calculus](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#calculus)\
+    [Arithmetic](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#arithmetic)\
+    [Warnings](https://numpy.org/devdocs/reference/routines.polynomials.poly1d.html#warnings)\
