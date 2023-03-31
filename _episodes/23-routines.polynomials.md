@@ -201,11 +201,17 @@ polynomial individually can be found in the corresponding module
 documentation:
 
 [Power Series (`numpy.polynomial.polynomial`)](https://numpy.org/devdocs/reference/routines.polynomials.polynomial.html)
+
 [Chebyshev Series (`numpy.polynomial.chebyshev`)](https://numpy.org/devdocs/reference/routines.polynomials.chebyshev.html)
+
 [Hermite Series, “Physicists” (`numpy.polynomial.hermite`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite.html)
+
 [HermiteE Series, “Probabilists” (`numpy.polynomial.hermite_e`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite_e.html)
+
 [Laguerre Series (`numpy.polynomial.laguerre`)](https://numpy.org/devdocs/reference/routines.polynomials.laguerre.html)
+
 [Legendre Series (`numpy.polynomial.legendre`)](https://numpy.org/devdocs/reference/routines.polynomials.legendre.html)
+
 [Polyutils](https://numpy.org/devdocs/reference/routines.polynomials.polyutils.html)
 
 ## Documentation for Legacy Polynomials
