@@ -146,7 +146,7 @@ y = np.arange(10) + rng.standard_normal(10)
 {: .python}
 
 With the legacy polynomial module, a linear fit (i.e. polynomial of
-degree 1) could be applied to these data with `[polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit):
+degree 1) could be applied to these data with [`polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit):
 
 ~~~
 np.polyfit(x, y, deg=1)
