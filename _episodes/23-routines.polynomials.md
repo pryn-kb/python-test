@@ -133,47 +133,57 @@ classes](routines.polynomials.classes) for further details on the
 
 Another major difference between the legacy polynomial module and the
 polynomial package is polynomial fitting. In the old module, fitting was
-done via the [\~numpy.polyfit]{.title-ref} function. In the polynomial
-package, the [\~numpy.polynomial.polynomial.Polynomial.fit]{.title-ref}
+done via the [`polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit) function. In the polynomial
+package, the [`fit`](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.fit.html#numpy.polynomial.polynomial.Polynomial.fit)
 class method is preferred. For example, consider a simple linear fit to
 the following data:
 
-::: ipython
-python
-
-rng = np.random.default_rng() x = np.arange(10) y = np.arange(10) +
-rng.standard_normal(10)
-:::
+~~~
+rng = np.random.default_rng() 
+x = np.arange(10) 
+y = np.arange(10) + rng.standard_normal(10)
+~~~
+{: .python}
 
 With the legacy polynomial module, a linear fit (i.e. polynomial of
-degree 1) could be applied to these data with \`\~numpy.polyfit\`:
+degree 1) could be applied to these data with `[polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit):
 
-::: ipython
-python
-
+~~~
 np.polyfit(x, y, deg=1)
-:::
+~~~
+{: .python}
+~~~
+array([0.75901174, 1.23135249])
+~~~
+{: .output}
 
 With the new polynomial API, the
-[\~numpy.polynomial.polynomial.Polynomial.fit]{.title-ref} class method
+[`fit`](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.fit.html#numpy.polynomial.polynomial.Polynomial.fit) class method
 is preferred:
 
-::: ipython
-python
-
-p_fitted = np.polynomial.Polynomial.fit(x, y, deg=1) p_fitted
-:::
+~~~
+p_fitted = np.polynomial.Polynomial.fit(x, y, deg=1) 
+p_fitted
+~~~
+{: .python}
+~~~
+Polynomial([4.64690534, 3.41555285], domain=[0., 9.], window=[-1.,  1.], symbol='x')
+~~~
+{: .output}
 
 Note that the coefficients are given *in the scaled domain* defined by
 the linear mapping between the `window` and `domain`.
-[\~numpy.polynomial.polynomial.Polynomial.convert]{.title-ref} can be
+[`convert`](https://numpy.org/devdocs/reference/generated/numpy.polynomial.polynomial.Polynomial.convert.html#numpy.polynomial.polynomial.Polynomial.convert) can be
 used to get the coefficients in the unscaled data domain.
 
-::: ipython
-python
-
+~~~
 p_fitted.convert()
-:::
+~~~
+{: .python}
+~~~
+Polynomial([1.23135249, 0.75901174], domain=[-1.,  1.], window=[-1.,  1.], symbol='x')
+~~~
+{: .output}
 
 ## Documentation for the [\~numpy.polynomial]{.title-ref} Package
 
