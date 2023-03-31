@@ -19,7 +19,13 @@ keypoints:
 - "Python is case-sensitive."
 - "Use meaningful variable names."
 ---
-## Use variables to store values.
+## Use variables to store values
+
+Variables are one of the fundamental building blocks of Python. A variable is like a tiny container where you store values and data, such as filenames, words, numbers, collections of words and numbers, and more.
+
+The variable name will point to a value that you “assign” it. You might think about variable assignment like putting a value “into” the variable, as if the variable is a little box 🎁
+
+You assign variables with an equals = sign. In Python, a single equals sign = is the “assignment operator.” (A double equals sign == is the “real” equals sign.)
 
 *   Variables are names for values.
 *   In Python the `=` symbol assigns the value on the right to the name on the left.
@@ -33,20 +39,72 @@ first_name = 'Ahmed'
 ~~~
 {: .python}
 
-*   Variable names:
-    *   cannot start with a digit
-    *   cannot contain spaces, quotation marks, or other punctuation
-    *   *may* contain an underscore (typically used to separate words in long variable names)
+## Variable names
+
+Variable names can be as long or as short as you want, but there are certain rules you must follow.
+
+Variables:
+
+*   cannot start with a digit
+*   cannot contain spaces, quotation marks, or other punctuation
+*   *may* contain an underscore (typically used to separate words in long variable names)
 *   Underscores at the start like `__alistairs_real_age` have a special meaning
     so we won't do that until we understand the convention.
 
-## Use `print` to display values.
+### Use meaningful variable names
+
+Python doesn't care what you call variables as long as they obey the rules (alphanumeric characters and the underscore).\
+As you start to code, you will almost certainly be tempted to use extremely short variables names like `f`. Your fingers will get tired. Your coffee will wear off. You will see other people using variables like `f`. You’ll promise yourself that you’ll definitely remember what `f` means. But you probably won’t.
+
+So, resist the temptation of bad variable names! Clear and precisely-named variables will:
+
+*   make your code more readable (both to yourself and others)
+*   reinforce your understanding of Python and what’s happening in the code
+*   clarify and strengthen your thinking
+
+~~~
+flabadab = 42
+ewr_422_yY = 'Ahmed'
+print(ewr_422_yY, 'is', flabadab, 'years old')
+~~~
+{: .python}
+
+*   Use meaningful variable names to help other people understand what the program does.
+*   The most important "other person" is your future self.
+
+### Python is case-sensitive
+
+*   Python thinks that upper- and lower-case letters are different,
+    so `Name` and `name` are different variables.
+*   There are conventions for using upper-case letters at the start of variable names
+    so we will use lower-case letters for now.
+
+### Off-Limits Names
+
+The only variable names that are off-limits are names that are reserved by, or built into, the Python programming language itself — such as `print`, `True`, and `list`.
+
+This is not something to worry too much about. You’ll know very quickly if a name is reserved by Python because it will show up in green and often give you an error message.
+
+## Use `print` to display values
+
+We can check to see what’s “inside” variables by running a cell with the variable’s name. This is one of the handiest features of a Jupyter notebook. Outside the Jupyter environment, you would need to use the `print` function to display the variable.
+
+~~~
+first_name
+~~~
+{: .python}
+~~~
+Ahmed
+~~~
+{: .output}
+
+You can run the `print` function inside the Jupyter environment, too. This is sometimes useful because Jupyter will only display the last variable in a cell, while `print` can display multiple variables. Additionally, Jupyter will display text with `\n` characters (which means “new line”), while `print` will display the text appropriately formatted with new lines.
 
 *   Python has a built-in function called `print` that prints things as text.
 *   Call the function (i.e., tell Python to run it) by using its name.
 *   Provide values to the function (i.e., the things to print) in parentheses.
-*   To add a string to the printout, wrap the string in single quotations.
-*   The values passed to the function are called 'arguments'
+*   To add a string to the printout, wrap the string in single or double quotations.
+*   The values passed to the function are called 'arguments'.
 
 ~~~
 print(first_name, 'is', age, 'years old')
@@ -60,7 +118,7 @@ Ahmed is 42 years old
 *   `print` automatically puts a single space between items to separate them.
 *   And wraps around to a new line at the end.
 
-## Variables must be created before they are used.
+## Variables must be created before they are used
 
 *   If a variable doesn't exist yet, or if the name has been mis-spelled,
     Python reports an error.
@@ -81,18 +139,22 @@ NameError: name 'eye_color' is not defined
 {: .error}
 
 *   The last line of an error message is usually the most informative.
-*   We will look at error messages in detail [later]({{ page.root }}/05-error-messages/).
+<!-- *   We will look at error messages in detail [later]({{ page.root }}/05-error-messages/). -->
 
 > ## Variables Persist Between Cells
 > Variables defined in one cell exist in all other cells once executed,
 > so the relative location of cells in the notebook do not matter
 > (i.e., cells lower down can still affect those above).
-> Remember: Notebook cells are just a way to organize a program:
-> as far as Python is concerned,
-> all of the source code is one long set of instructions.
+>
+> * Notice the number in the square brackets `[ ]` to the left of the cell.
+> * These numbers indicate the order, in which the cells have been executed.
+> * Cells with lower numbers will affect cells with higher numbers as Python runs the cells chronologically.
+>
+> Remember: Notebook cells are just a way to organize a program!\
+> As far as Python is concerned, all of the source code is one long set of instructions.
 {: .callout}
 
-## Variables can be used in calculations.
+## Variables can be used in calculations
 
 *   We can use variables in calculations just as if they were values.
     *   Remember, we assigned 42 to `age` a few lines ago.
@@ -107,7 +169,7 @@ Age in three years: 45
 ~~~
 {: .output}
 
-## Use an index to get a single character from a string.
+## Use an index to get a single character from a string
 
 *   The characters (individual letters, numbers, and so on) in a string are
     ordered. For example, the string 'AB' is not the same as 'BA'. Because of
@@ -128,7 +190,7 @@ h
 ~~~
 {: .output}
 
-## Use a slice to get a substring.
+## Use a slice to get a substring
 
 *   A part of a string is called a substring. A substring can be as short as a
     single character.
@@ -153,7 +215,7 @@ sod
 ~~~
 {: .output}
 
-## Use the built-in function `len` to find the length of a string.
+## Use the built-in function `len` to find the length of a string
 
 ~~~
 print(len('helium'))
@@ -166,28 +228,6 @@ print(len('helium'))
 
 *   Nested functions are evaluated from the inside out,
     just like in mathematics.
-
-## Python is case-sensitive.
-
-*   Python thinks that upper- and lower-case letters are different,
-    so `Name` and `name` are different variables.
-*   There are conventions for using upper-case letters at the start of variable names
-    so we will use lower-case letters for now.
-
-## Use meaningful variable names.
-
-*   Python doesn't care what you call variables as long as they obey the rules
-    (alphanumeric characters and the underscore).
-
-~~~
-flabadab = 42
-ewr_422_yY = 'Ahmed'
-print(ewr_422_yY, 'is', flabadab, 'years old')
-~~~
-{: .python}
-
-*   Use meaningful variable names to help other people understand what the program does.
-*   The most important "other person" is your future self.
 
 > ## Swapping Values
 >

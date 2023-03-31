@@ -18,7 +18,7 @@ keypoints:
 - "Use `range` to iterate over a sequence of numbers."
 - "The Accumulator pattern turns many values into one."
 ---
-## A *for loop* executes commands once for each value in a collection.
+## A *for loop* executes commands once for each value in a collection
 
 *   Doing calculations on the values in a list one by one
     is as painful as working with `temperature_001`, `temperature_002`, etc.
@@ -51,7 +51,7 @@ print(5)
 ~~~
 {: .output}
 
-## The first line of the `for` loop must end with a colon, and the body must be indented.
+## The first line of the `for` loop must end with a colon, and the body must be indented
 
 *   The colon at the end of the first line signals the start of a *block* of statements.
 *   Python uses indentation rather than `{}` or `begin`/`end` to show *nesting*.
@@ -85,7 +85,7 @@ IndentationError: unexpected indent
 *   This error can be fixed by removing the extra spaces
     at the beginning of the second line.
 
-## A `for` loop is made up of a collection, a loop variable, and a body.
+## A `for` loop is made up of a collection, a loop variable, and a body
 
 ~~~
 for number in [2, 3, 5]:
@@ -98,7 +98,7 @@ for number in [2, 3, 5]:
 *   The loop variable, `number`, is what changes for each *iteration* of the loop.
     *   The "current thing".
 
-## Loop variable names follow the normal variable name conventions.
+## Loop variable names follow the normal variable name conventions
 
 *   Loop variables will:
     *   Be created on demand during the course of each loop.
@@ -113,7 +113,7 @@ for kitten in [2, 3, 5]:
 ~~~
 {: .python}
 
-## The body of a loop can contain many statements.
+## The body of a loop can contain many statements
 
 *   But no loop should be more than a few lines long.
 *   Hard for human beings to keep larger chunks of code in mind.
@@ -133,7 +133,7 @@ for p in primes:
 ~~~
 {: .output}
 
-## Use `range` to iterate over a sequence of numbers.
+## Use `range` to iterate over a sequence of numbers
 
 *   The built-in function `range` produces a sequence of numbers.
     *   *Not* a list: the numbers are produced on demand
@@ -155,7 +155,7 @@ a range is not a list: range(0, 3)
 ~~~
 {: .output}
 
-## Or use `range` to repeat an action an arbitrary number of times.
+## Or use `range` to repeat an action an arbitrary number of times
 
 *   You don't actually have to use the iterable variable's value.
 *   Use this structure to simply repeat an action some number of times.
@@ -175,7 +175,7 @@ Again!
 ~~~
 {: .output}
 
-## The Accumulator pattern turns many values into one.
+## The Accumulator pattern turns many values into one
 
 *   A common pattern in programs is to:
     1.  Initialize an *accumulator* variable to zero, the empty string, or the empty list.

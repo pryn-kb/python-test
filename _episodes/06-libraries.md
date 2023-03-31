@@ -17,7 +17,7 @@ keypoints:
 - "Import specific items from a library to shorten programs."
 - "Create an alias for a library when importing it to shorten programs."
 ---
-## Most of the power of a programming language is in its (software) libraries.
+## Most of the power of a programming language is in its (software) libraries
 
 *   A *(software) library* is a collection of files (called *modules*) that contains
     functions for use by other programs.
@@ -36,7 +36,7 @@ keypoints:
 {: .callout}
 
 
-## A program must import a library module before using it.
+## A program must import a library module before using it
 
 *   Use `import` to load a library module into a program's memory.
 *   Then refer to things from the module as `module_name.thing_name`.
@@ -60,7 +60,7 @@ Capitalise This Sentence Please.
     *   `string.capwords(ascii_lowercase)` won't work: the reference to `ascii_lowercase`
         doesn't somehow "inherit" the function's reference to `string`.
 
-## Use `help` to learn about the contents of a library module.
+## Use `help` to learn about the contents of a library module
 
 *   Works just like help for a function.
 
@@ -104,7 +104,7 @@ CLASSES
 ~~~
 {: .output}
 
-## Import specific items from a library module to shorten programs.
+## Import specific items from a library module to shorten programs
 
 *   Use `from ... import ...` to load only specific items from a library module.
 *   Then refer to them directly without library name as prefix.
@@ -120,7 +120,7 @@ The ASCII letters are abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 ~~~
 {: .output}
 
-## Create an alias for a library module when importing it to shorten programs.
+## Create an alias for a library module when importing it to shorten programs
 
 *   Use `import ... as ...` to give a library a short *alias* while importing it.
 *   Then refer to items in the library using that shortened name.
