@@ -146,7 +146,7 @@ y = np.arange(10) + rng.standard_normal(10)
 {: .python}
 
 With the legacy polynomial module, a linear fit (i.e. polynomial of
-degree 1) could be applied to these data with `[polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit):
+degree 1) could be applied to these data with [`polyfit`](https://numpy.org/devdocs/reference/generated/numpy.polyfit.html#numpy.polyfit):
 
 ~~~
 np.polyfit(x, y, deg=1)
@@ -201,11 +201,17 @@ polynomial individually can be found in the corresponding module
 documentation:
 
 [Power Series (`numpy.polynomial.polynomial`)](https://numpy.org/devdocs/reference/routines.polynomials.polynomial.html)
+
 [Chebyshev Series (`numpy.polynomial.chebyshev`)](https://numpy.org/devdocs/reference/routines.polynomials.chebyshev.html)
+
 [Hermite Series, “Physicists” (`numpy.polynomial.hermite`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite.html)
+
 [HermiteE Series, “Probabilists” (`numpy.polynomial.hermite_e`)](https://numpy.org/devdocs/reference/routines.polynomials.hermite_e.html)
+
 [Laguerre Series (`numpy.polynomial.laguerre`)](https://numpy.org/devdocs/reference/routines.polynomials.laguerre.html)
+
 [Legendre Series (`numpy.polynomial.legendre`)](https://numpy.org/devdocs/reference/routines.polynomials.legendre.html)
+
 [Polyutils](https://numpy.org/devdocs/reference/routines.polynomials.polyutils.html)
 
 ## Documentation for Legacy Polynomials
