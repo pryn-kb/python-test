@@ -356,48 +356,6 @@ There are eight comparison operations in Python. They all have the same priority
 
 This table summarizes the comparison operations:
 
-<table class="colwidths-auto table" style="border:1px solid black">
-<thead>
-<tr class="row-odd">
-<th class="head"><p>Operation</p></th>
-<th class="head"><p>Meaning</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even">
-<td><p><code><</code></p></td>
-<td><p>strictly less than</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code><=</code></p></td>
-<td><p>less than or equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>></code></p></td>
-<td><p>strictly greater than</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>>=</code></p></td>
-<td><p>greater than or equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>==</code></p></td>
-<td><p>equal</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>!=</code></p></td>
-<td><p>not equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>is</code></p></td>
-<td><p>object identity</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>is not</code></p></td>
-<td><p>negated object identity</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Booleans
 
