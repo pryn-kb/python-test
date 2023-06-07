@@ -364,11 +364,11 @@ This table summarizes the comparison operations:
 </tr>
 </thead>
 <tbody>
-
-<tr class="row-odd">
-<td><p><code><=</code></p></td>
-<td><p>less than or equal</p></td>
+<tr class="row-even">
+<td><p><code><</code></p></td>
+<td><p>strictly less than</p></td>
 </tr>
+
 <tr class="row-even">
 <td><p><code>></code></p></td>
 <td><p>strictly greater than</p></td>
