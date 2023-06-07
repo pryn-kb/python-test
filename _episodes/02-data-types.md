@@ -397,16 +397,12 @@ This table summarizes the comparison operations:
 <td><p>if <i>x</i> is true, then <i>x</i>, else <i>y</i></p></td>
 </tr>
 <tr class="row-odd">
-<td><code>x and y</code></td>
-<td>if <i>x</i> is false, then <i>x</i>, else <i>y</i></td>
+<td><p><code>x and y</code></p></td>
+<td><p>if <i>x</i> is false, then <i>x</i>, else <i>y</i></p></td>
 </tr>
 <tr class="row-even">
-<td><code>not x</code></td>
-<td>if <i>x</i> is false, then <code>True</code>, else <code>False</code></td>
-</tr>
-<tr class="row-odd">
-<td><p><code class="docutils literal notranslate"><span class="pre">x ** y</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><p><code>not x</code></p></td>
+<td><p>if <i>x</i> is false, then <code>True</code>, else <code>False</code></p></td>
 </tr>
 </tbody>
 </table>
