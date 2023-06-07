@@ -258,7 +258,7 @@ IndexError: string index out of range
 > What does the following program print?
 >
 > ~~~
-> element = 'helium'
+> elements = ['hydrogen', 'helium', 'lithium', 'berylium']
 > print(element[-1])
 > ~~~
 > {: .python}
@@ -273,7 +273,7 @@ IndexError: string index out of range
 > 
 > > ## Solution
 > > ~~~
-> > m
+> > berylium
 > > ~~~
 > > {: .output}
 > > 1.  A negative index begins at the final element. 
