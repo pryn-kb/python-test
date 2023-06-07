@@ -398,7 +398,7 @@ This table summarizes the comparison operations:
 </tr>
 <tr class="row-odd">
 <td><code>x and y</code></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to floating point</p></td>
+<td>if <i>x</i> is false, then <i>x</i>, else <i>y</i></td>
 </tr>
 <tr class="row-even">
 <td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></p></td>
