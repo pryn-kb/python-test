@@ -365,37 +365,22 @@ This table summarizes the comparison operations:
 </thead>
 <tbody>
 <tr class="row-even">
-<td><p><code><</code></p></td>
+<td><p><code><span class="pre"><</span></code></p></td>
 <td><p>strictly less than</p></td>
 </tr>
 <tr class="row-odd">
-<td><p><code><=</code></p></td>
+<td><p><code><span class="pre"><=</span></code></p></td>
 <td><p>less than or equal</p></td>
 </tr>
 <tr class="row-even">
-<td><p><code>></code></p></td>
+<td><p><code><span class="pre">></span></code></p></td>
 <td><p>strictly greater than</p></td>
 </tr>
 <tr class="row-odd">
-<td><p><code>>=</code></p></td>
+<td><p><code><span class="pre">>=</span></code></p></td>
 <td><p>greater than or equal</p></td>
 </tr>
-<tr class="row-even">
-<td><p><code>==</code></p></td>
-<td><p>equal</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>!=</code></p></td>
-<td><p>not equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>is</code></p></td>
-<td><p>object identity</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>is not</code></p></td>
-<td><p>negated object identity</p></td>
-</tr>
+
 </tbody>
 </table>
 
