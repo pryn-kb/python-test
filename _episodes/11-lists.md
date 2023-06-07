@@ -362,7 +362,8 @@ IndexError: string index out of range
 > > letters is ['d', 'g', 'l', 'o'] and result is None
 > > ~~~
 > > {: .output}
-> > `sorted(letters)` returns a sorted copy of the list, while `letters.sort()` sorted the list _in place_. Thus, it was already sorted, and calling a further sort returns `None`.  
+> > `sorted(letters)` returns a sorted copy of the list without changing the original list,
+> > while `letters.sort()` sorts the original list but does not return anything, i.e. returns `None`.
 > {: .solution}
 {: .challenge}
 
