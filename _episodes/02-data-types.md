@@ -393,7 +393,7 @@ This table summarizes the comparison operations:
 </thead>
 <tbody>
 <tr class="row-even">
-<td><p>`x or y`</p></td>
+<td><p><code>x or y</code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to integer</p></td>
 </tr>
 <tr class="row-odd">
