@@ -259,7 +259,7 @@ IndexError: string index out of range
 >
 > ~~~
 > elements = ['hydrogen', 'helium', 'lithium', 'berylium']
-> print(element[-1])
+> print(elements[-1])
 > ~~~
 > {: .python}
 >
