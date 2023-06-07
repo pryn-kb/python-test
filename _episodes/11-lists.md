@@ -288,7 +288,7 @@ IndexError: string index out of range
 > What does the following program print?
 >
 > ~~~
-> element = 'fluorine'
+> elements = ['hydrogen', 'helium', 'lithium', 'berylium']
 > print(element[::2])
 > print(element[::-1])
 > ~~~
@@ -299,8 +299,8 @@ IndexError: string index out of range
 > 
 > > ## Solution
 > > ~~~
-> > furn
-> > eniroulf
+> > ['hydrogen', 'lithium']
+> > ['berylium', 'lithium', 'helium', 'hydrogen']
 > > ~~~
 > > {: .output}
 > > 1.  `stride` indicates both the number of steps, and from which end: positive starts from first element, negative from the last element. 
@@ -313,16 +313,16 @@ IndexError: string index out of range
 > What does the following program print?
 >
 > ~~~
-> element = 'lithium'
-> print(element[0:20])
-> print(element[-1:3])
+> elements = ['hydrogen', 'helium', 'lithium', 'berylium']
+> print(elements[0:20])
+> print(elements[-1:3])
 > ~~~
 > {: .python}
 > > ## Solution
 > > 
 > > ~~~
-> > lithium 
-> > ''
+> > ['hydrogen', 'helium', 'lithium', 'berylium']
+> > []
 > > ~~~
 > > {: .output}
 > > There is no 20th index, so the entire string is captured.  
