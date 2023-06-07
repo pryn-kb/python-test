@@ -351,6 +351,54 @@ You can do a large range of mathematical calculations and operations with intege
 ~~~
 {: .output}
 
+## Comparisons
+There are eight comparison operations in Python. They all have the same priority (which is higher than that of the Boolean operations). Comparisons can be chained arbitrarily; for example, `x < y <= z` is equivalent to `x < y and y <= z`, except that *y* is evaluated only once (but in both cases *z* is not evaluated at all when `x < y` is found to be false).
+
+This table summarizes the comparison operations:
+
+<table class="colwidths-auto table" style="border:1px solid black">
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><code><</code></p></td>
+<td><p>strictly less than</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code><=</code></p></td>
+<td><p>less than or equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>></code></p></td>
+<td><p>strictly greater than</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>>=</code></p></td>
+<td><p>greater than or equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>==</code></p></td>
+<td><p>equal</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>!=</code></p></td>
+<td><p>not equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>is</code></p></td>
+<td><p>object identity</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>is not</code></p></td>
+<td><p>negated object identity</p></td>
+</tr>
+</tbody>
+</table>
+
 ## Booleans
 
 Booleans are “truth” values. They report on whether things in your Python universe are `True` or `False`. There are the only two options for a boolean: `True` or `False`.
@@ -403,53 +451,5 @@ False
 > *   A double equals sign `==` is used as the equals operator
 > *   A single equals sign `=` is used for variable assignment (We will learn more about this in the lesson about variables)
 {: .callout}
-
-## Comparisons
-There are eight comparison operations in Python. They all have the same priority (which is higher than that of the Boolean operations). Comparisons can be chained arbitrarily; for example, `x < y <= z` is equivalent to `x < y and y <= z`, except that *y* is evaluated only once (but in both cases *z* is not evaluated at all when `x < y` is found to be false).
-
-This table summarizes the comparison operations:
-
-<table class="colwidths-auto table" style="border:1px solid black">
-<thead>
-<tr class="row-odd">
-<th class="head"><p>Operation</p></th>
-<th class="head"><p>Meaning</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even">
-<td><p><code><</code></p></td>
-<td><p>strictly less than</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code><=</code></p></td>
-<td><p>less than or equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>></code></p></td>
-<td><p>strictly greater than</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>>=</code></p></td>
-<td><p>greater than or equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>==</code></p></td>
-<td><p>equal</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>!=</code></p></td>
-<td><p>not equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>is</code></p></td>
-<td><p>object identity</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>is not</code></p></td>
-<td><p>negated object identity</p></td>
-</tr>
-</tbody>
-</table>
 
 &nbsp;  
