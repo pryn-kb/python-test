@@ -253,10 +253,11 @@ result of call is: None
 > > 2003/2/1
 > > ~~~
 > > {: .output}
-> > It is useful to call a function with named arguments to ensure that the
-> > values of each argument are assigned to the intended argument in the
-> > function. This allows the order of arguments to be specified independently
-> > of how they are defined in the function itself.
+> 1.  A similar function was used in "Arguments in call are matched to parameters in definition" above.
+> 2.  It is useful to call a function with named arguments to ensure that the 
+values of each argument are assigned to the intended argument in the 
+function. This allows the order of arguments to be specified independently 
+of how they are defined in the function itself.
 > {: .solution}
 {: .challenge}
 
