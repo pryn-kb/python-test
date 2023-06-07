@@ -180,7 +180,7 @@ result of call is: None
 > {: .solution}
 {: .challenge}
 
-> ## Encapsulation
+<!-- > ## Encapsulation
 >
 > Fill in the blanks to create a function that takes a single filename as an argument,
 > loads the data in the file named by the argument,
@@ -205,7 +205,7 @@ result of call is: None
 > > ~~~
 > > {: .python}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Find the First
 >
@@ -327,7 +327,7 @@ result of call is: None
 > {: .solution}
 {: .challenge}
 
-> ## Encapsulating Data Analysis
+<!-- > ## Encapsulating Data Analysis
 >
 > Assume that the following code has been executed:
 >
@@ -408,4 +408,4 @@ result of call is: None
 > > ~~~
 > > {: .python}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
