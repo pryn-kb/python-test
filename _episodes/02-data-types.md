@@ -380,22 +380,7 @@ This table summarizes the comparison operations:
 <td><p><code>>=</code></p></td>
 <td><p>greater than or equal</p></td>
 </tr>
-<tr class="row-even">
-<td><p><code>==</code></p></td>
-<td><p>equal</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>!=</code></p></td>
-<td><p>not equal</p></td>
-</tr>
-<tr class="row-even">
-<td><p><code>is</code></p></td>
-<td><p>object identity</p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code>is not</code></p></td>
-<td><p>negated object identity</p></td>
-</tr>
+
 </tbody>
 </table>
 
