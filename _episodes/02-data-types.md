@@ -449,30 +449,6 @@ This table summarizes the comparison operations:
 <td><p><code>is not</code></p></td>
 <td><p>negated object identity</p></td>
 </tr>
-<tr class="row-even">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd">
-<td><p><code></code></p></td>
-<td><p></p></td>
-</tr>
 </tbody>
 </table>
 
