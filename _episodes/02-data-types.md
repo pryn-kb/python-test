@@ -401,8 +401,8 @@ This table summarizes the comparison operations:
 <td>if <i>x</i> is false, then <i>x</i>, else <i>y</i></td>
 </tr>
 <tr class="row-even">
-<td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> to the power <code class="docutils literal notranslate"><span class="pre">y</span></code></p></td>
+<td><code>not x</code></td>
+<td>if <i>x</i> is false, then <code>True</code>, else <code>False</code></td>
 </tr>
 <tr class="row-odd">
 <td><p><code class="docutils literal notranslate"><span class="pre">x ** y</span></code></p></td>
