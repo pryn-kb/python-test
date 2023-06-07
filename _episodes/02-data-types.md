@@ -394,10 +394,10 @@ This table summarizes the comparison operations:
 <tbody>
 <tr class="row-even">
 <td><p><code>x or y</code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to integer</p></td>
+<td><p>if <i>x</i> is true, then <i>x</i>, else <i>y</i></p></td>
 </tr>
 <tr class="row-odd">
-<td><p><code class="docutils literal notranslate"><span class="pre">float(x)</span></code></p></td>
+<td><code>x and y</code></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x</span></code> converted to floating point</p></td>
 </tr>
 <tr class="row-even">
