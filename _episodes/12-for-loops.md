@@ -215,7 +215,8 @@ print(total)
 > ## Tracing Execution
 >
 > Create a table showing the numbers of the lines that are executed when this program runs,
-> and the values of the variables after each line is executed.
+> and the values of the variables after each line is executed.  
+> Hint: You can use the `print()` function to see how the variables change.
 >
 > ~~~
 > total = 0
