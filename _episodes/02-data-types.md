@@ -139,7 +139,7 @@ Each data type has different properties and capabilities. So there are special t
 For example, you can **index** and **slice** strings, you can **add** strings together, and you can transform strings to uppercase or lowercase.\
 Here are a few examples:
 
-### Index
+<!-- ### Index
 
 Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
 
@@ -179,7 +179,7 @@ If `s` is a string, an expression of the form `s[m:n]` returns the portion of `s
 ~~~
 'I am a s'
 ~~~
-{: .output}
+{: .output} -->
 
 ### Concatenation
 
@@ -194,7 +194,7 @@ The `+` operator concatenates strings. It returns a string consisting of the ope
 ~~~
 {: .output}
 
-### Make uppercase
+<!-- ### Make uppercase
 
 The method `upper()` returns a copy of the string with all alphabetic characters converted to uppercase:
 
@@ -205,7 +205,7 @@ The method `upper()` returns a copy of the string with all alphabetic characters
 ~~~
 'I AM A STRING'
 ~~~
-{: .output}
+{: .output} -->
 
 <!-- ## f-Strings
 
