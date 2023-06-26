@@ -169,7 +169,7 @@ Age in three years: 45
 ~~~
 {: .output}
 
-## Use an index to get a single character from a string
+<!-- ## Use an index to get a single character from a string
 
 *   The characters (individual letters, numbers, and so on) in a string are
     ordered. For example, the string 'AB' is not the same as 'BA'. Because of
@@ -227,7 +227,7 @@ print(len('helium'))
 {: .output}
 
 *   Nested functions are evaluated from the inside out,
-    just like in mathematics.
+    just like in mathematics. -->
 
 > ## Swapping Values
 >
@@ -284,7 +284,7 @@ print(len('helium'))
 >{: .solution}
 {: .challenge}
 
-> ## Can you slice integers?
+<!-- > ## Can you slice integers?
 >
 > If you assign `a = 123`,
 > what happens if you try to get the second digit of `a`?
@@ -303,7 +303,7 @@ print(len('helium'))
 > > ~~~
 > > {: .error}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Choosing a Name
 >
@@ -323,7 +323,7 @@ print(len('helium'))
 > {: .solution}
 {: .challenge}
 
-> ## Slicing
+<!-- > ## Slicing
 >
 > What does the following program print?
 >
@@ -350,4 +350,4 @@ print(len('helium'))
 > > 4.  It will print the entire string
 > > 5.  It will slice the string, starting the `number` index, and ending a distance of the absolute value of `negative-number` elements from the end of the string
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
