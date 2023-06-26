@@ -62,24 +62,20 @@ after
 
 *   Use `max` to find the largest value of one or more values.
 *   Use `min` to find the smallest.
-*   Both work on character strings as well as numbers.
-    *   "Larger" and "smaller" use (0-9, A-Z, a-z) to compare letters.
-    *   This means that:
-        *   `'a'` is smaller than `'b'`
-        *   `'A'` is smaller than `'a'`
-        *   `'0'` is smaller than `'a'`
-    *   This is useful for ordering alphabetically.
+*   Use `round`to round of a number. `round` can take one or two parameter values. The second value defines how many decimals are returned. The default number of decimals is 0, meaning that the function will return the nearest integer if only one parameter value is given.
 
 ~~~
 print(max(1, 2, 3))
-print(min('a', 'b', 'c'))
-print(min('a', 'A'))
+print(min(1, 2, 3))
+print(round(3.1415926))
+print(round(3.1415926, 2))
 ~~~
 {: .python}
 ~~~
 3
-a
-A
+1
+3
+3.14
 ~~~
 {: .output}
 
