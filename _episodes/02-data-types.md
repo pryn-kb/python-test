@@ -353,6 +353,60 @@ You can do a large range of mathematical calculations and operations with intege
 ~~~
 {: .output}
 
+> ## Division Types
+> There are three different types of division:
+> 1. 'Normal' division (aka floating-point division) is what most people may be
+> familiar with: 5 / 2 = 2.5
+> 2. Floor division, which cuts out the part after the period: 5 / 2 = 2
+> 3. Modulo division, which only keeps the remained after division: 5 / 2 = 1
+>
+> In Python 3,  the `/` operator performs floating-point division, the `//`
+> operator performs floor division, and the '%' (or *modulo*) operator
+> calculates the modulo division:
+>
+> ~~~
+> print('5 / 3:', 5/3)
+> print('5 // 3:', 5//3)
+> print('5 % 3:', 5%3)
+> ~~~
+> {: .python}
+>
+> ~~~
+> 5 // 3: 1
+> 5 / 3: 1.6666666666666667
+> 5 % 3: 2
+> ~~~
+> {: .output}
+>
+> If `num_students` is the number of students enrolled in a course (let say 600),
+> and `num_per_class` is the number that can attend a single class (let say 42),
+> write an expression that calculates the number of classes needed
+> to teach everyone.
+>
+> > ## Solution
+> > Depending on requirements it might be important to detect when the number of students per class doesn't divide the
+> > number of students evenly. Detect it with the `%` operator and test if the remainder that it returns is greater than
+> > 0.
+> >
+> >
+> > ~~~
+> > num_students = 600
+> > num_per_class = 42
+> > num_classes = num_students // num_per_class
+> > remainder = num_students % num_per_class
+> >
+> > print(num_students, 'students,', num_per_class, 'per class')
+> > print(num_classes, ' full classes, plus an extra class with only ', remainder, 'students')
+> > ~~~
+> > {: .python}
+> > ~~~
+> > 600 students, 42 per class
+> > 14  full classes, plus an extra class with only  12 students
+> > ~~~
+> > {: .output}
+> {: .solution}
+{: .challenge}
+
 ## Comparisons
 There are eight comparison operations in Python. They all have the same priority (which is higher than that of the Boolean operations). Comparisons can be chained arbitrarily; for example, `x < y <= z` is equivalent to `x < y and y <= z`, except that *y* is evaluated only once (but in both cases *z* is not evaluated at all when `x < y` is found to be false).
 
