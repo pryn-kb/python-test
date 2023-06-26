@@ -132,12 +132,12 @@ A backslash character `\` tells Python to treat the next character like a normal
 ~~~
 {: .python}
 
-## String Methods
+<!-- ## String Methods
 
 Each data type has different properties and capabilities. So there are special things that only strings can do, and there are special ways of interacting with strings.
 
 For example, you can **index** and **slice** strings, you can **add** strings together, and you can transform strings to uppercase or lowercase.\
-Here are a few examples:
+Here are a few examples: -->
 
 <!-- ### Index
 
