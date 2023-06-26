@@ -112,7 +112,7 @@ print(separator)
 ~~~
 {: .output}
 
-## Strings have a length (but numbers don't)
+<!-- ## Strings have a length (but numbers don't)
 
 *   The built-in function `len` counts the number of characters in a string.
 
@@ -139,7 +139,7 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: object of type 'int' has no len()
 ~~~
-{: .error}
+{: .error} -->
 
 ## Must convert numbers to strings or vice versa when operating on them
 
