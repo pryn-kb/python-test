@@ -246,7 +246,7 @@ first is 2 and second is 5
 > {: .solution}
 {: .challenge}
 
-> ## Division Types
+<!-- > ## Division Types
 > There are three different types of division:
 > 1. 'Normal' division (aka floating-point division) is what most people may be
 > familiar with: 5 / 2 = 2.5
@@ -298,7 +298,7 @@ first is 2 and second is 5
 > > ~~~
 > > {: .output}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Strings to Numbers
 >
