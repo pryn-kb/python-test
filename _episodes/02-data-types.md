@@ -253,7 +253,9 @@ float
 
 ### Mathematical operations
 
-You can do a large range of mathematical calculations and operations with integers and floats. The table below is taken from Python’s documentation about [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
+You can do a large range of mathematical calculations and operations with integers and floats.
+
+(All the tables below are taken from Python’s documentation about [Built-in Types](https://docs.python.org/3/library/stdtypes.html).)
 
 <table class="colwidths-auto table" style="border:1px solid black">
 <thead>
@@ -351,9 +353,82 @@ You can do a large range of mathematical calculations and operations with intege
 ~~~
 {: .output}
 
+## Comparisons
+There are eight comparison operations in Python. They all have the same priority (which is higher than that of the Boolean operations). Comparisons can be chained arbitrarily; for example, `x < y <= z` is equivalent to `x < y and y <= z`, except that *y* is evaluated only once (but in both cases *z* is not evaluated at all when `x < y` is found to be false).
+
+This table summarizes the comparison operations:
+
+<table class="colwidths-auto table" style="border:1px solid black">
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><code><</code></p></td>
+<td><p>strictly less than</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code><=</code></p></td>
+<td><p>less than or equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>></code></p></td>
+<td><p>strictly greater than</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>>=</code></p></td>
+<td><p>greater than or equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>==</code></p></td>
+<td><p>equal</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>!=</code></p></td>
+<td><p>not equal</p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>is</code></p></td>
+<td><p>object identity</p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>is not</code></p></td>
+<td><p>negated object identity</p></td>
+</tr>
+</tbody>
+</table>
+
 ## Booleans
 
 Booleans are “truth” values. They report on whether things in your Python universe are `True` or `False`. There are the only two options for a boolean: `True` or `False`.
+
+These are the Boolean operations, ordered by ascending priority:
+
+<table class="colwidths-auto table" style="border:1px solid black">
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><code>x or y</code></p></td>
+<td><p>if <i>x</i> is true, then <i>x</i>, else <i>y</i></p></td>
+</tr>
+<tr class="row-odd">
+<td><p><code>x and y</code></p></td>
+<td><p>if <i>x</i> is false, then <i>x</i>, else <i>y</i></p></td>
+</tr>
+<tr class="row-even">
+<td><p><code>not x</code></p></td>
+<td><p>if <i>x</i> is false, then <code>True</code>, else <code>False</code></p></td>
+</tr>
+</tbody>
+</table>
 
 ~~~
 13 < 17

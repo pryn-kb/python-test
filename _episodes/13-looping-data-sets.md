@@ -16,6 +16,8 @@ keypoints:
 
 ## Use a `for` loop to process files given a list of their names.
 
+Test
+
 *   A filename is just a character string.
 *   And lists can contain character strings.
 

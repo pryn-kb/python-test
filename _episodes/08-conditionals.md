@@ -309,7 +309,7 @@ final velocity: 30.0
 > {: .solution}
 {: .challenge}
 
-> ## Processing Small Files
+<!-- > ## Processing Small Files
 >
 > Modify this program so that it only processes files with fewer than 50 records.
 >
@@ -333,7 +333,7 @@ final velocity: 30.0
 > > ~~~
 > > {: .python}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Initializing
 >
@@ -371,7 +371,7 @@ final velocity: 30.0
 > {: .solution}
 {: .challenge}
 
-> ## Using Functions With Conditionals in Pandas
+<!-- > ## Using Functions With Conditionals in Pandas
 >
 > Functions will often contain conditionals.  Here is a short example that
 > will indicate which quartile the argument is in based on hand-coded values
@@ -420,4 +420,4 @@ final velocity: 30.0
 > column in the dataframe called `data` labeled `lifExp`.  We use the
 > `apply()` to do what it says, apply the `calculate_life_quartile` to the
 > value of this column for every row in the dataframe.
-{: .callout}
+{: .callout} -->
