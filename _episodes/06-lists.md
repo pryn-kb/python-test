@@ -394,7 +394,7 @@ IndexError: list index out of range
 > # Program A
 > old = [1, 2, 3, 4]
 > new = old      # simple assignment
-> new[0] = '5'
+> new[0] = 5
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
@@ -403,7 +403,7 @@ IndexError: list index out of range
 > # Program B
 > old = [1, 2, 3, 4]
 > new = old[:]   # assigning a slice
-> new[0] = '5'
+> new[0] = 5
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
@@ -411,12 +411,12 @@ IndexError: list index out of range
 > > ## Solution
 > > Program A:
 > > ~~~
-> > new is ['5', 2, 3, 4] and old is ['5', 2, 3, 4]
+> > new is [5, 2, 3, 4] and old is [5, 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > Program B:
 > > ~~~
-> > new is ['5', 2, 3, 4] and old is [1, 2, 3, 4]
+> > new is [5, 2, 3, 4] and old is [1, 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > 
