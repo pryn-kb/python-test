@@ -15,8 +15,8 @@ keypoints:
 - "Use `del` to remove items from a list entirely."
 - "The empty list contains no values."
 - "Lists may contain values of different types."
-- "Character strings can be indexed like lists."
-- "Character strings are immutable."
+# - "Character strings can be indexed like lists."
+# - "Character strings are immutable."
 - "Indexing beyond the end of the collection is an error."
 ---
 ## A list stores many values in a single structure
