@@ -58,7 +58,39 @@ after
 ~~~
 {: .output}
 
-## Commonly-used built-in functions include `max`, `min`, and `round`
+## Commonly-used built-in functions include `int`, `str`, `float`, `max`, `min`, and `round`
+
+*   Use `int` to convert at string or a float to an integer.
+*   Use `str` to convert an integer or a float to a string.
+*   Use `float` to convert an integer or a string to a float.
+
+~~~
+print(int(3.1415926))
+print(str(3.1415926))
+print(float(3))
+~~~
+{: .python}
+~~~
+3
+3.1415926
+3.0
+~~~
+{: .output}
+
+Note, that when converting from a string to an integer or a float, the string must be readable as an integer or a float. Otherwise, you will get an error message.
+
+~~~
+print(int('I am not a readable number'))
+~~~
+{: .python}
+~~~
+ValueError                                Traceback (most recent call last)
+<ipython-input-11-a4794639b01c> in <cell line: 1>()
+----> 1 print(int('I am not a readable number'))
+
+ValueError: invalid literal for int() with base 10: 'I am not a readable number'
+~~~
+{: .output}
 
 *   Use `max` to find the largest value of one or more values.
 *   Use `min` to find the smallest.
