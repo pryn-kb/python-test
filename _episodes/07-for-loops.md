@@ -70,13 +70,13 @@ IndentationError: expected an indented block
 *   Indentation is always meaningful in Python.
 
 ~~~
-firstName="Jon"
-  lastName="Smith"
+firstName = "Jon"
+  lastName = "Smith"
 ~~~
 {: .python}
 ~~~
   File "<ipython-input-7-f65f2962bf9c>", line 2
-    lastName="Smith"
+    lastName = "Smith"
     ^
 IndentationError: unexpected indent
 ~~~
@@ -133,7 +133,7 @@ for p in primes:
 ~~~
 {: .output}
 
-## Use `range` to iterate over a sequence of numbers
+## Use `range` to repeat an action an arbitrary number of times
 
 *   The built-in function `range` produces a sequence of numbers.
     *   *Not* a list: the numbers are produced on demand
@@ -220,21 +220,21 @@ print(total)
 >
 > ~~~
 > total = 0
-> for char in "tin":
+> for element in ['hydrogen', 'helium', 'lithium', 'berylium']:
 >     total = total + 1
 > ~~~
 > {: .python}
 {: .challenge}
 
-> ## Reversing a String
+<!-- > ## Reversing a List
 >
-> Fill in the blanks in the program below so that it prints "nit"
-> (the reverse of the original character string "tin").
+> Fill in the blanks in the program below so that it prints [4, 3, 2, 1]
+> (the reverse of the original list [1, 2, 3, 4]).
 >
 > ~~~
-> original = "tin"
+> original = [1, 2, 3, 4]
 > result = ____
-> for char in original:
+> for number in original:
 >     result = ____
 > print(result)
 > ~~~
@@ -242,14 +242,14 @@ print(total)
 > >
 > > ## Solution
 > >
-> > `result` is an empty string because we use it to build or accumulate on our reverse string. `char` is the loop variable for `original`. Each time through the loop `char` takes on one value from `original`. Use `char` with `result` to control the order of the string. Our loop code should look like this:
+> > `result` is an empty list because we use it to build or accumulate on our reverse list. `number` is the loop variable for `original`. Each time through the loop `number` takes on one value from `original`. Use `number` with `result` to control the order of the list. Our loop code should look like this:
 > > ~~~
-> > original = "tin"
-> > result = ""
-> > for char in original:
-> >    result = char + result
+> > original = [1, 2, 3, 4]
+> > result = []
+> > for number in original:
+> >    result = result.append(number)
 > > print(result)
-> > nit
+> > [4, 3, 2, 1]
 > > ~~~
 > > If you were to expand out the loop the iterations would look something like this:
 > > ~~~
@@ -268,9 +268,9 @@ print(total)
 > > ~~~
 > > {: .python}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
-> ## Practice Accumulating
+<!-- > ## Practice Accumulating
 >
 > Fill in the blanks in each of the programs below
 > to produce the indicated result.
@@ -308,7 +308,7 @@ print(total)
 > # write the whole thing
 > ~~~
 > {: .python}
-{: .challenge}
+{: .challenge} -->
 
 > ## Cumulative Sum
 >
