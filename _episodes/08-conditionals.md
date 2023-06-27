@@ -369,7 +369,7 @@ final velocity: 30.0
 > > ~~~
 > > {: .python}
 > >
-> > The above solution, even though it teaches us the use of a solving the problem by using a for loop, is a bit cumbersome.
+> > The above solution, even though it teaches us how to solve the problem by using a for loop, is a bit cumbersome.  
 > > An easier solution would be:
 > >
 > > ~~~
