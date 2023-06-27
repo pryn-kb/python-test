@@ -24,7 +24,7 @@ keypoints:
     *   Components in a machine.
     *   Lemmas when proving theorems.
 *   Functions serve the same purpose in programs.
-    *   *Encapsulate* complexity so that we can treat it as a single "thing".
+    <!-- *   *Encapsulate* complexity so that we can treat it as a single "thing". -->
 *   Also enables *re-use*.
     *   Write one time, use many times.
 
@@ -265,7 +265,7 @@ of how they are defined in the function itself.
 > {: .solution}
 {: .challenge}
 
-> ## Encapsulate of If/Print Block
+<!-- > ## Encapsulate of If/Print Block
 >
 > The code below will run on a label-printer for chicken eggs.  A digital scale will report a chicken egg mass (in grams) to the computer and then the computer will print a label.  
 >
@@ -330,7 +330,7 @@ of how they are defined in the function itself.
 > > ~~~
 > > {: .python}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 <!-- > ## Encapsulating Data Analysis
 >
