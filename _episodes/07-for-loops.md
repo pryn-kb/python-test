@@ -311,7 +311,7 @@ print(total)
 {: .challenge} -->
 
 ## Practice Accumulating
->
+
 > Fill in the blanks in the programs below to produce the indicated result.
 >
 > ~~~
