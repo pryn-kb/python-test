@@ -329,7 +329,14 @@ print(total)
 > Reorder and properly indent the lines of code below
 > so that they print an array with the cumulative sum of data.
 > The result should be `[1, 3, 5, 10]`.
->
+> 
+> > ## What is `+=` ?
+> > 
+> > *   `+=` is called "additional assignment".
+> > *   It adds a value and the variable and assigns the result to that variable.
+> > *   In practice, this means that `a += b` is the same as `a = a + b`.
+{: .callout}
+
 > ~~~
 > cumulative += [sum]
 > for number in data:
