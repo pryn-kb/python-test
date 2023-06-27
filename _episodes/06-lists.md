@@ -146,7 +146,7 @@ goals = [1, 'Create lists.', 2, 'Extract items from lists.', 3, 'Modify lists.']
 ~~~
 {: .python}
 
-## Character strings can be indexed like lists
+<!-- ## Character strings can be indexed like lists
 
 *   Get single characters from a character string using indexes in square brackets.
 
@@ -179,7 +179,7 @@ TypeError: 'str' object does not support item assignment
 ~~~
 {: .error}
 
-*   Lists and character strings are both *collections*.
+*   Lists and character strings are both *collections*. -->
 
 ## Indexing beyond the end of the collection is an error
 
@@ -189,11 +189,12 @@ TypeError: 'str' object does not support item assignment
         because the index might be calculated based on data.
 
 ~~~
-print('99th element of element is:', element[99])
+elements = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium']
+print('99th element of elements are:', elements[99])
 ~~~
 {: .python}
 ~~~
-IndexError: string index out of range
+IndexError: list index out of range
 ~~~
 {: .output}
 
@@ -245,7 +246,7 @@ IndexError: string index out of range
 > {: .solution}
 {: .challenge}
 
-> ## From Strings to Lists and Back
+<!-- > ## From Strings to Lists and Back
 >
 > Given this:
 >
@@ -268,7 +269,7 @@ IndexError: string index out of range
 > >  1.  It creates a list of the `some string`s characters as elements. 
 > >  2.  It creates a string composed of `x` and `y`, separated by a hyphen character(`-`).  
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Working With the End
 >
@@ -284,8 +285,8 @@ IndexError: string index out of range
 > 2.  If a list or string has N elements,
 >     what is the most negative index that can safely be used with it,
 >     and what location does that index represent?
-> 3.  If `values` is a list, what does `del values[-1]` do?
-> 4.  How can you display all elements but the last one without changing `values`?
+> 3.  If `elements` is a list, what does `del elements[-1]` do?
+> 4.  How can you display all elements but the last one without changing `elements`?
 >     (Hint: you will need to combine slicing and negative indexing.)  
 > 
 > > ## Solution
@@ -296,7 +297,7 @@ IndexError: string index out of range
 > > 1.  A negative index begins at the final element. 
 > > 2.  `-(N)` corresponds to the first index, which is the [0] index.
 > > 3.  It removes the final element of the list. 
-> > 4.  You could do the following: `print(values[0:-1])`
+> > 4.  You could do the following: `print(elements[0:-1])`
 > {: .solution}
 {: .challenge}
 
