@@ -355,33 +355,33 @@ IndexError: list index out of range
 >
 > ~~~
 > # Program A
-> letters = list('gold')
-> result = sorted(letters)
-> print('letters is', letters, 'and result is', result)
+> numbers = ['one', 'two', 'three', 'four']
+> result = sorted(numbers)
+> print('numbers is', numbers, 'and result is', result)
 > ~~~
 > {: .python}
 >
 > ~~~
 > # Program B
-> letters = list('gold')
-> result = letters.sort()
-> print('letters is', letters, 'and result is', result)
+> numbers = ['one', 'two', 'three', 'four']
+> result = numbers.sort()
+> print('numbers is', numbers, 'and result is', result)
 > ~~~
 > {: .python}
 >
 > > ## Solution
 > > Program A:
 > > ~~~
-> > letters is ['g', 'o', 'l', 'd'] and result is ['d', 'g', 'l', 'o']
+> > numbers is ['one', 'two', 'three', 'four'] and result is ['four', 'one', 'three', 'two']
 > > ~~~
 > > {: .output}
 > > Program B:
 > > ~~~
-> > letters is ['d', 'g', 'l', 'o'] and result is None
+> > numbers is ['four', 'one', 'three', 'two'] and result is None
 > > ~~~
 > > {: .output}
-> > `sorted(letters)` returns a sorted copy of the list without changing the original list,
-> > while `letters.sort()` sorts the original list but does not return anything, i.e. returns `None`.
+> > `sorted(numbers)` returns a sorted copy of the list without changing the original list,
+> > while `numbers.sort()` sorts the original list but does not return anything, i.e. returns `None`.
 > {: .solution}
 {: .challenge}
 
@@ -392,18 +392,18 @@ IndexError: list index out of range
 >
 > ~~~
 > # Program A
-> old = list('gold')
+> old = [1, 2, 3, 4]
 > new = old      # simple assignment
-> new[0] = 'D'
+> new[0] = '5'
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
 >
 > ~~~
 > # Program B
-> old = list('gold')
+> old = [1, 2, 3, 4]
 > new = old[:]   # assigning a slice
-> new[0] = 'D'
+> new[0] = '5'
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
@@ -411,15 +411,16 @@ IndexError: list index out of range
 > > ## Solution
 > > Program A:
 > > ~~~
-> > new is ['D', 'o', 'l', 'd'] and old is ['D', 'o', 'l', 'd']
+> > new is ['5', 2, 3, 4] and old is ['5', 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > Program B:
 > > ~~~
-> > new is ['D', 'o', 'l', 'd'] and old is ['g', 'o', 'l', 'd']
+> > new is ['5', 2, 3, 4] and old is [1, 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > 
-> > `new = old` is assigning `old` to `new`, whereas `new = old[:]` is a **slice assignment**, which will only return a copy of `old`.
+> > `new = old` is assigning `old` to `new`. This means that the two variables both point to the same value. Thus, changing the contents of either variable will affect the other.
+> > In contrast, `new = old[:]` is a **slice assignment**, which will only return a copy of `old`.
 > {: .solution}
 {: .challenge}
