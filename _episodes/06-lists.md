@@ -42,6 +42,17 @@ length: 5
 ~~~
 {: .output}
 
+For some purposes, a string can also be considered as a list of letters. For example, we can also use `len` on a string:
+
+~~~
+len('Here is a string')
+~~~
+{: .python}
+~~~
+16
+~~~
+{: .output}
+
 ## Use an item's index to fetch it from a list
 
 Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
