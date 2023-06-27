@@ -322,7 +322,7 @@ print(total)
 >     ____
 > print(result)
 > ~~~~
-> {: .python}
+{: .python}
 
 > ## Additional Assignment: `+=`
 > 
