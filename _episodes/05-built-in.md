@@ -84,10 +84,6 @@ print(int('I am not a readable number'))
 ~~~
 {: .python}
 ~~~
-ValueError                                Traceback (most recent call last)
-<ipython-input-11-a4794639b01c> in <cell line: 1>()
-----> 1 print(int('I am not a readable number'))
-
 ValueError: invalid literal for int() with base 10: 'I am not a readable number'
 ~~~
 {: .error}
@@ -121,7 +117,7 @@ print(max(1, 'a'))
 ~~~
 {: .python}
 ~~~
-TypeError: unorderable types: str() > int()
+TypeError: '>' not supported between instances of 'str' and 'int'
 ~~~
 {: .error}
 
