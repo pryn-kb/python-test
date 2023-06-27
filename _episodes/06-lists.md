@@ -44,7 +44,13 @@ length: 5
 
 ## Use an item's index to fetch it from a list
 
-*   Just like strings.
+Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
+
+In Python, lists are ordered sequences of character data, and thus can be indexed in this way. Individual characters in a list can be accessed by specifying the string name followed by a number in square brackets `[]`. 
+
+List indexing in Python is zero-based: the first character in the string has index 0, the next has index 1, and so on. The index of the last character will be the length of the list minus one.
+
+The individual items can be accessed by index:
 
 ~~~
 print('zeroth item of temperatures:', temperatures[0])
