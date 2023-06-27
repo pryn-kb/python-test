@@ -1,5 +1,5 @@
 ---
-title: "Built-in Functions and Help"
+title: "Built-in Functions, errors messages, and Help"
 teaching: 15
 exercises: 10
 questions:
@@ -206,6 +206,7 @@ NameError: name 'aege' is not defined
 *   Every function call produces some result.
 *   If the function doesn't have a useful result to return,
     it usually returns the special value `None`.
+*   The print function only writes the output to the screen, it does not store it in the variable – thus, the variable is empty (`None`).
 
 ~~~
 result = print('example')
@@ -218,7 +219,7 @@ result of print is None
 ~~~
 {: .output}
 
-> ## What Happens When
+<!-- > ## What Happens When
 >
 > 1. Explain in simple terms the order of operations in the following program:
 >    when does the addition happen, when does the subtraction happen,
@@ -238,9 +239,9 @@ result of print is None
 > > ping
 > > ~~~
 >{: .solution}
-{: .challenge}
+{: .challenge} -->
 
-> ## Spot the Difference
+<!-- > ## Spot the Difference
 >
 > 1. Predict what each of the `print` statements in the program below will print.
 > 2. Does `max(len(rich), poor)` run or produce an error message?
@@ -261,7 +262,7 @@ result of print is None
 > > 4
 > > ~~~
 >{: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Why Not?
 >
@@ -280,7 +281,7 @@ result of print is None
 >{: .solution}
 {: .challenge}
 
-> ## Last Character of a String
+<!-- > ## Last Character of a String
 >
 > If Python starts counting from zero,
 > and `len` returns the number of characters in a string,
@@ -291,4 +292,4 @@ result of print is None
 > >
 > > `name[len(name) - 1]`
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
