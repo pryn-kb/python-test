@@ -90,7 +90,7 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: invalid literal for int() with base 10: 'I am not a readable number'
 ~~~
-{: .output}
+{: .error}
 
 *   Use `max` to find the largest value of one or more values.
 *   Use `min` to find the smallest.
