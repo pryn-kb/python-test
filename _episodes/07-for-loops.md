@@ -312,16 +312,16 @@ print(total)
 
 ## Practice Accumulating
 
-> Fill in the blanks in the programs below to produce the indicated result.
->
-> ~~~
-> # Concatenate all words: ["red", "green", "blue"] => "redgreenblue"
-> words = ["red", "green", "blue"]
-> result = ____
-> for ____ in ____:
->     ____
-> print(result)
-> ~~~~
+Fill in the blanks in the programs below to produce the indicated result.
+
+~~~
+# Concatenate all words: ["red", "green", "blue"] => "redgreenblue"
+words = ["red", "green", "blue"]
+result = ____
+for ____ in ____:
+    ____
+print(result)
+~~~~
 {: .python}
 
 > ## Additional Assignment: `+=`
