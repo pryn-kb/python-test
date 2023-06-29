@@ -368,6 +368,15 @@ final velocity: 30.0
 > > print(smallest, largest)
 > > ~~~
 > > {: .python}
+> >
+> > The above solution, even though it teaches us how to solve the problem by using a for loop, is a bit cumbersome.  
+> > An easier solution would be:
+> >
+> > ~~~
+> > values = [1, 3, 4, 5, 10]
+> > print(min(values), max(values))
+> > ~~~
+> > {: .python}
 > {: .solution}
 {: .challenge}
 

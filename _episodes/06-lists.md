@@ -15,8 +15,8 @@ keypoints:
 - "Use `del` to remove items from a list entirely."
 - "The empty list contains no values."
 - "Lists may contain values of different types."
-- "Character strings can be indexed like lists."
-- "Character strings are immutable."
+# - "Character strings can be indexed like lists."
+# - "Character strings are immutable."
 - "Indexing beyond the end of the collection is an error."
 ---
 ## A list stores many values in a single structure
@@ -42,9 +42,26 @@ length: 5
 ~~~
 {: .output}
 
+For some purposes, a string can also be considered as a list of letters. For example, we can also use `len` on a string:
+
+~~~
+len('Here is a string')
+~~~
+{: .python}
+~~~
+16
+~~~
+{: .output}
+
 ## Use an item's index to fetch it from a list
 
-*   Just like strings.
+Often in programming languages, individual items in an ordered set of data can be accessed directly using a numeric index or key value. This process is referred to as indexing.
+
+In Python, lists are ordered sequences of items, and thus can be indexed in this way. Individual items in a list can be accessed by specifying the list name followed by a number in square brackets `[]`. 
+
+List indexing in Python is zero-based: the first item in the list has index 0, the next has index 1, and so on. The index of the last item will be the length of the list minus one.
+
+The individual items can be accessed by index:
 
 ~~~
 print('zeroth item of temperatures:', temperatures[0])
@@ -129,7 +146,7 @@ goals = [1, 'Create lists.', 2, 'Extract items from lists.', 3, 'Modify lists.']
 ~~~
 {: .python}
 
-## Character strings can be indexed like lists
+<!-- ## Character strings can be indexed like lists
 
 *   Get single characters from a character string using indexes in square brackets.
 
@@ -162,7 +179,7 @@ TypeError: 'str' object does not support item assignment
 ~~~
 {: .error}
 
-*   Lists and character strings are both *collections*.
+*   Lists and character strings are both *collections*. -->
 
 ## Indexing beyond the end of the collection is an error
 
@@ -172,11 +189,12 @@ TypeError: 'str' object does not support item assignment
         because the index might be calculated based on data.
 
 ~~~
-print('99th element of element is:', element[99])
+elements = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium']
+print('99th element of elements are:', elements[99])
 ~~~
 {: .python}
 ~~~
-IndexError: string index out of range
+IndexError: list index out of range
 ~~~
 {: .output}
 
@@ -228,7 +246,7 @@ IndexError: string index out of range
 > {: .solution}
 {: .challenge}
 
-> ## From Strings to Lists and Back
+<!-- > ## From Strings to Lists and Back
 >
 > Given this:
 >
@@ -251,7 +269,7 @@ IndexError: string index out of range
 > >  1.  It creates a list of the `some string`s characters as elements. 
 > >  2.  It creates a string composed of `x` and `y`, separated by a hyphen character(`-`).  
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Working With the End
 >
@@ -267,8 +285,8 @@ IndexError: string index out of range
 > 2.  If a list or string has N elements,
 >     what is the most negative index that can safely be used with it,
 >     and what location does that index represent?
-> 3.  If `values` is a list, what does `del values[-1]` do?
-> 4.  How can you display all elements but the last one without changing `values`?
+> 3.  If `elements` is a list, what does `del elements[-1]` do?
+> 4.  How can you display all elements but the last one without changing `elements`?
 >     (Hint: you will need to combine slicing and negative indexing.)  
 > 
 > > ## Solution
@@ -279,7 +297,7 @@ IndexError: string index out of range
 > > 1.  A negative index begins at the final element. 
 > > 2.  `-(N)` corresponds to the first index, which is the [0] index.
 > > 3.  It removes the final element of the list. 
-> > 4.  You could do the following: `print(values[0:-1])`
+> > 4.  You could do the following: `print(elements[0:-1])`
 > {: .solution}
 {: .challenge}
 
@@ -337,33 +355,33 @@ IndexError: string index out of range
 >
 > ~~~
 > # Program A
-> letters = list('gold')
-> result = sorted(letters)
-> print('letters is', letters, 'and result is', result)
+> numbers = ['one', 'two', 'three', 'four']
+> result = sorted(numbers)
+> print('numbers is', numbers, 'and result is', result)
 > ~~~
 > {: .python}
 >
 > ~~~
 > # Program B
-> letters = list('gold')
-> result = letters.sort()
-> print('letters is', letters, 'and result is', result)
+> numbers = ['one', 'two', 'three', 'four']
+> result = numbers.sort()
+> print('numbers is', numbers, 'and result is', result)
 > ~~~
 > {: .python}
 >
 > > ## Solution
 > > Program A:
 > > ~~~
-> > letters is ['g', 'o', 'l', 'd'] and result is ['d', 'g', 'l', 'o']
+> > numbers is ['one', 'two', 'three', 'four'] and result is ['four', 'one', 'three', 'two']
 > > ~~~
 > > {: .output}
 > > Program B:
 > > ~~~
-> > letters is ['d', 'g', 'l', 'o'] and result is None
+> > numbers is ['four', 'one', 'three', 'two'] and result is None
 > > ~~~
 > > {: .output}
-> > `sorted(letters)` returns a sorted copy of the list without changing the original list,
-> > while `letters.sort()` sorts the original list but does not return anything, i.e. returns `None`.
+> > `sorted(numbers)` returns a sorted copy of the list without changing the original list,
+> > while `numbers.sort()` sorts the original list but does not return anything, i.e. returns `None`.
 > {: .solution}
 {: .challenge}
 
@@ -374,18 +392,18 @@ IndexError: string index out of range
 >
 > ~~~
 > # Program A
-> old = list('gold')
+> old = [1, 2, 3, 4]
 > new = old      # simple assignment
-> new[0] = 'D'
+> new[0] = 5
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
 >
 > ~~~
 > # Program B
-> old = list('gold')
+> old = [1, 2, 3, 4]
 > new = old[:]   # assigning a slice
-> new[0] = 'D'
+> new[0] = 5
 > print('new is', new, 'and old is', old)
 > ~~~
 > {: .python}
@@ -393,15 +411,16 @@ IndexError: string index out of range
 > > ## Solution
 > > Program A:
 > > ~~~
-> > new is ['D', 'o', 'l', 'd'] and old is ['D', 'o', 'l', 'd']
+> > new is [5, 2, 3, 4] and old is [5, 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > Program B:
 > > ~~~
-> > new is ['D', 'o', 'l', 'd'] and old is ['g', 'o', 'l', 'd']
+> > new is [5, 2, 3, 4] and old is [1, 2, 3, 4]
 > > ~~~
 > > {: .output}
 > > 
-> > `new = old` is assigning `old` to `new`, whereas `new = old[:]` is a **slice assignment**, which will only return a copy of `old`.
+> > `new = old` is assigning `old` to `new`. This means that the two variables both point to the same value. Thus, changing the contents of either variable will affect the other.
+> > In contrast, `new = old[:]` is a **slice assignment**, which will only return a copy of `old`.
 > {: .solution}
 {: .challenge}

@@ -112,35 +112,6 @@ print(separator)
 ~~~
 {: .output}
 
-## Strings have a length (but numbers don't)
-
-*   The built-in function `len` counts the number of characters in a string.
-
-~~~
-print(len(full_name))
-~~~
-{: .python}
-~~~
-11
-~~~
-{: .output}
-
-*   But numbers don't have a length (not even zero).
-
-~~~
-print(len(52))
-~~~
-{: .python}
-~~~
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-3-f769e8e8097d> in <module>()
-----> 1 print(len(52))
-
-TypeError: object of type 'int' has no len()
-~~~
-{: .error}
-
 ## Must convert numbers to strings or vice versa when operating on them
 
 *   Cannot add numbers and strings.
@@ -275,7 +246,7 @@ first is 2 and second is 5
 > {: .solution}
 {: .challenge}
 
-> ## Division Types
+<!-- > ## Division Types
 > There are three different types of division:
 > 1. 'Normal' division (aka floating-point division) is what most people may be
 > familiar with: 5 / 2 = 2.5
@@ -327,7 +298,7 @@ first is 2 and second is 5
 > > ~~~
 > > {: .output}
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Strings to Numbers
 >

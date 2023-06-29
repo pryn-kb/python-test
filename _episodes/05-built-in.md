@@ -1,5 +1,5 @@
 ---
-title: "Built-in Functions and Help"
+title: "Built-in Functions, errors messages, and Help"
 teaching: 15
 exercises: 10
 questions:
@@ -58,28 +58,52 @@ after
 ~~~
 {: .output}
 
-## Commonly-used built-in functions include `max`, `min`, and `round`
+## Commonly-used built-in functions include `int`, `str`, `float`, `max`, `min`, and `round`
 
-*   Use `max` to find the largest value of one or more values.
-*   Use `min` to find the smallest.
-*   Both work on character strings as well as numbers.
-    *   "Larger" and "smaller" use (0-9, A-Z, a-z) to compare letters.
-    *   This means that:
-        *   `'a'` is smaller than `'b'`
-        *   `'A'` is smaller than `'a'`
-        *   `'0'` is smaller than `'a'`
-    *   This is useful for ordering alphabetically.
+*   Use `int` to convert at string or a float to an integer.
+*   Use `str` to convert an integer or a float to a string.
+*   Use `float` to convert an integer or a string to a float.
 
 ~~~
-print(max(1, 2, 3))
-print(min('a', 'b', 'c'))
-print(min('a', 'A'))
+print(int(3.1415926))
+print(str(3.1415926))
+print(float(3))
 ~~~
 {: .python}
 ~~~
 3
-a
-A
+3.1415926
+3.0
+~~~
+{: .output}
+
+Note, that when converting from a string to an integer or a float, the string must be readable as an integer or a float. Otherwise, you will get an error message.
+
+~~~
+print(int('I am not a readable number'))
+~~~
+{: .python}
+~~~
+ValueError: invalid literal for int() with base 10: 'I am not a readable number'
+~~~
+{: .error}
+
+*   Use `max` to find the largest value of one or more values.
+*   Use `min` to find the smallest.
+*   Use `round`to round of a number. `round` can take one or two parameter values. The second value defines how many decimals are returned. The default number of decimals is 0, meaning that the function will return the nearest integer if only one parameter value is given.
+
+~~~
+print(max(1, 2, 3))
+print(min(1, 2, 3))
+print(round(3.1415926))
+print(round(3.1415926, 2))
+~~~
+{: .python}
+~~~
+3
+1
+3
+3.14
 ~~~
 {: .output}
 
@@ -93,7 +117,7 @@ print(max(1, 'a'))
 ~~~
 {: .python}
 ~~~
-TypeError: unorderable types: str() > int()
+TypeError: '>' not supported between instances of 'str' and 'int'
 ~~~
 {: .error}
 
@@ -210,6 +234,7 @@ NameError: name 'aege' is not defined
 *   Every function call produces some result.
 *   If the function doesn't have a useful result to return,
     it usually returns the special value `None`.
+*   The print function only writes the output to the screen, it does not store it in the variable – thus, the variable is empty (`None`).
 
 ~~~
 result = print('example')
@@ -222,7 +247,7 @@ result of print is None
 ~~~
 {: .output}
 
-> ## What Happens When
+<!-- > ## What Happens When
 >
 > 1. Explain in simple terms the order of operations in the following program:
 >    when does the addition happen, when does the subtraction happen,
@@ -242,9 +267,9 @@ result of print is None
 > > ping
 > > ~~~
 >{: .solution}
-{: .challenge}
+{: .challenge} -->
 
-> ## Spot the Difference
+<!-- > ## Spot the Difference
 >
 > 1. Predict what each of the `print` statements in the program below will print.
 > 2. Does `max(len(rich), poor)` run or produce an error message?
@@ -265,7 +290,7 @@ result of print is None
 > > 4
 > > ~~~
 >{: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Why Not?
 >
@@ -284,7 +309,7 @@ result of print is None
 >{: .solution}
 {: .challenge}
 
-> ## Last Character of a String
+<!-- > ## Last Character of a String
 >
 > If Python starts counting from zero,
 > and `len` returns the number of characters in a string,
@@ -295,4 +320,4 @@ result of print is None
 > >
 > > `name[len(name) - 1]`
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
